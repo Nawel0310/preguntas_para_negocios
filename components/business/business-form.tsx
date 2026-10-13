@@ -22,6 +22,7 @@ import {
 } from "@/data/questions";
 import { createBusiness, nameKey } from "@/lib/business";
 import { cn } from "@/lib/cn";
+import { businessHref } from "@/lib/routes";
 import { formatUsd } from "@/lib/format";
 import { scoreBusiness, VERDICT_META } from "@/lib/scoring";
 import { getBusinesses, saveBusiness, useBusinesses } from "@/lib/storage";
@@ -126,7 +127,7 @@ export function BusinessForm({ initial, defaultNicheId }: { initial?: Business; 
       if (!persist(draft)) return;
     }
     toast(`"${draft.name.trim()}" guardado.`);
-    router.push(`/negocios/${draft.id}`);
+    router.push(businessHref(draft.id));
   };
 
   const current = STEPS[step];
@@ -136,7 +137,7 @@ export function BusinessForm({ initial, defaultNicheId }: { initial?: Business; 
     <div ref={topRef} className="flex scroll-mt-24 flex-col gap-6">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <div className="flex flex-col gap-1">
-          <Link href={initial ? `/negocios/${initial.id}` : "/negocios"} className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground">
+          <Link href={initial ? businessHref(initial.id) : "/negocios"} className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground">
             <ArrowLeft className="size-4" aria-hidden="true" /> Volver
           </Link>
           <h1 className="text-2xl font-bold sm:text-3xl">{initial ? `Editar: ${initial.name}` : "Nuevo prospecto"}</h1>

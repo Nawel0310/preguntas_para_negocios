@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { use } from "react";
 import { SearchX } from "lucide-react";
 import { buttonClasses } from "@/components/ui/button";
 import { EmptyState } from "@/components/ui/empty-state";
@@ -47,8 +46,8 @@ export function NewBusinessLoader() {
   return <BusinessForm defaultNicheId={nicho && NICHE_BY_ID.has(nicho) ? nicho : undefined} />;
 }
 
-export function EditBusinessLoader({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = use(params);
+export function EditBusinessLoader() {
+  const id = useSearchParams().get("id") ?? "";
   const hydrated = useHydrated();
   useBusinesses(); // re-render si llega por otra pestaña / import
   if (!hydrated) return <FormSkeleton />;
@@ -58,8 +57,8 @@ export function EditBusinessLoader({ params }: { params: Promise<{ id: string }>
   return <BusinessForm key={business.id} initial={business} />;
 }
 
-export function DetailBusinessLoader({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = use(params);
+export function DetailBusinessLoader() {
+  const id = useSearchParams().get("id") ?? "";
   const hydrated = useHydrated();
   const businesses = useBusinesses();
   if (!hydrated) return <FormSkeleton />;

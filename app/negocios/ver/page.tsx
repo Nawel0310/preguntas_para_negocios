@@ -4,10 +4,10 @@ import { DetailBusinessLoader, FormSkeleton } from "@/components/business/form-l
 
 export const metadata: Metadata = { title: "Prospecto" };
 
-export default function BusinessPage({ params }: PageProps<"/negocios/[id]">) {
+export default function BusinessPage() {
   return (
     <Suspense fallback={<FormSkeleton />}>
-      <DetailBusinessLoader params={params} />
+      <DetailBusinessLoader />
     </Suspense>
   );
 }

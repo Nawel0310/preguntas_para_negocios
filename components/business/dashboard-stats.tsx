@@ -8,6 +8,7 @@ import { Card } from "@/components/ui/card";
 import { EmptyState } from "@/components/ui/empty-state";
 import { formatDate } from "@/lib/format";
 import { nicheName } from "@/lib/niches";
+import { businessHref } from "@/lib/routes";
 import { scoreBusiness, type Verdict } from "@/lib/scoring";
 import { useBusinesses, useHydrated } from "@/lib/storage";
 import { VerdictBadge } from "./verdict";
@@ -77,7 +78,7 @@ export function DashboardStats() {
             {recent.map(({ b, s }) => (
               <Link
                 key={b.id}
-                href={`/negocios/${b.id}`}
+                href={businessHref(b.id)}
                 className="flex flex-col gap-1 p-4 transition-colors duration-150 first:rounded-t-xl last:rounded-b-xl hover:bg-muted/50 focus-visible:bg-muted/50 focus-visible:outline-none sm:flex-row sm:items-center sm:gap-4"
               >
                 <div className="min-w-0 flex-1">

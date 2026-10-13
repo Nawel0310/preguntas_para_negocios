@@ -22,6 +22,7 @@ import {
 } from "@/data/questions";
 import { formatDateTime, formatUsd } from "@/lib/format";
 import { categoryOfNiche, nicheName } from "@/lib/niches";
+import { businessEditHref } from "@/lib/routes";
 import { scoreBusiness, VERDICT_META } from "@/lib/scoring";
 import { deleteBusinesses } from "@/lib/storage";
 import { downloadJson } from "@/lib/transfer";
@@ -72,7 +73,7 @@ export function BusinessDetail({ business }: { business: Business }) {
             </p>
           </div>
           <div className="flex flex-wrap gap-2">
-            <Link href={`/negocios/${business.id}/editar`} className={buttonClasses("primary")}>
+            <Link href={businessEditHref(business.id)} className={buttonClasses("primary")}>
               <Pencil aria-hidden="true" /> Editar respuestas
             </Link>
             <Button variant="outline" onClick={() => downloadJson([business], `negocio-${slug(business.name)}.json`)}>

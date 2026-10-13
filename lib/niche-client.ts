@@ -11,7 +11,7 @@ const cache = new Map<string, Promise<Niche>>();
 export function loadNiche(id: string): Promise<Niche> {
   let promise = cache.get(id);
   if (!promise) {
-    promise = fetch(`/data/niches/${encodeURIComponent(id)}.json`).then((res) => {
+    promise = fetch(`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/data/niches/${encodeURIComponent(id)}.json`).then((res) => {
       if (!res.ok) throw new Error(`No se encontró el nicho "${id}"`);
       return res.json() as Promise<Niche>;
     });

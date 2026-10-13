@@ -4,10 +4,10 @@ import { EditBusinessLoader, FormSkeleton } from "@/components/business/form-loa
 
 export const metadata: Metadata = { title: "Editar prospecto" };
 
-export default function EditBusinessPage({ params }: PageProps<"/negocios/[id]/editar">) {
+export default function EditBusinessPage() {
   return (
     <Suspense fallback={<FormSkeleton />}>
-      <EditBusinessLoader params={params} />
+      <EditBusinessLoader />
     </Suspense>
   );
 }

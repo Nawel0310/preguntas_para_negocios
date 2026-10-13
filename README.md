@@ -40,9 +40,8 @@ Con las respuestas clasificadas, la app calcula un **puntaje**, da un **veredict
 
 ```bash
 pnpm install
-pnpm dev          # desarrollo en http://localhost:3000
-pnpm build        # build de producción
-pnpm start        # servir el build
+pnpm dev          # desarrollo en http://localhost:3000/preguntas_para_negocios
+pnpm build        # export estático en out/
 pnpm lint         # ESLint
 ```
 
@@ -188,7 +187,7 @@ Las preguntas y las objeciones se editan en `data/questions.ts` y `data/objectio
 ```
 app/                     Rutas (App Router)
   page.tsx               Inicio: resumen y reglas de oro
-  negocios/              Listado, nuevo, detalle y edición
+  negocios/              Listado, nuevo, ver?id=… y editar?id=…
   nichos/                Catálogo y detalle por nicho
 components/
   business/              Formulario, detalle, listado, veredicto
@@ -205,4 +204,22 @@ scripts/parse-niches.mjs Conversión del .docx a JSON
 docs/                    Fuentes de conocimiento
 ```
 
-**Stack:** Next.js 16 (App Router, Cache Components), React 19, Tailwind CSS v4, TypeScript, lucide-react y la fuente Mona Sans.
+**Stack:** Next.js 16 (App Router, export estático), React 19, Tailwind CSS v4, TypeScript, lucide-react y la fuente Mona Sans.
+
+---
+
+## Despliegue en GitHub Pages
+
+El sitio es 100% estático (`output: "export"` en `next.config.ts`) y se publica con el workflow `.github/workflows/nextjs.yml` en cada push a `master`.
+
+1. En GitHub: **Settings → Pages → Source: "GitHub Actions"**.
+2. Hacé push a `master`. Podés seguir el build en la pestaña **Actions**.
+3. El sitio queda en `https://<usuario>.github.io/preguntas_para_negocios/`.
+
+Hay algunas restricciones del export estático que conviene respetar:
+
+- **No hay rutas dinámicas por negocio.** Los negocios viven en el navegador, así que el detalle y la edición usan un parámetro en la URL (`/negocios/ver/?id=…`, `/negocios/editar/?id=…`).
+- **`basePath` es `/preguntas_para_negocios`** (el nombre del repo). `next/link` lo agrega solo. Para `fetch` usá `process.env.NEXT_PUBLIC_BASE_PATH` (ver `lib/niche-client.ts`). Si renombrás el repo, cambiá `basePath` en `next.config.ts` y en `image-loader.ts`.
+- **`trailingSlash: true`** genera `ruta/index.html`, para que recargar cualquier página funcione en Pages.
+- **No se puede usar `cacheComponents` ni `partialPrefetching`.** Activan PPR, que no es compatible con el export estático.
+

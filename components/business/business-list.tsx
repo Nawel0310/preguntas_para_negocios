@@ -11,6 +11,7 @@ import { Input, Select } from "@/components/ui/field";
 import { Pagination } from "@/components/ui/pagination";
 import { useToast } from "@/components/ui/toast";
 import { cn } from "@/lib/cn";
+import { businessEditHref, businessHref } from "@/lib/routes";
 import { formatDate } from "@/lib/format";
 import { CATEGORY_BY_ID, NICHE_BY_ID, NICHES_BY_CATEGORY, nicheName, normalizeText } from "@/lib/niches";
 import { scoreBusiness, VERDICT_META, type Verdict } from "@/lib/scoring";
@@ -357,7 +358,7 @@ export function BusinessList() {
                     className="mt-1 size-5 shrink-0 accent-[hsl(var(--primary))]"
                   />
                   <div className="min-w-0 flex-1">
-                    <Link href={`/negocios/${b.id}`} className="block truncate font-semibold hover:underline focus-visible:underline focus-visible:outline-none">
+                    <Link href={businessHref(b.id)} className="block truncate font-semibold hover:underline focus-visible:underline focus-visible:outline-none">
                       {b.name}
                     </Link>
                     <p className="truncate text-sm text-muted-foreground">
@@ -370,10 +371,10 @@ export function BusinessList() {
                   <ScoreMeter score={s.score} className="min-w-32 flex-1" />
                 </div>
                 <div className="flex gap-1 pl-8 sm:pl-0">
-                  <Link href={`/negocios/${b.id}`} className={buttonClasses("ghost", "icon")} aria-label={`Ver ${b.name}`} title="Ver">
+                  <Link href={businessHref(b.id)} className={buttonClasses("ghost", "icon")} aria-label={`Ver ${b.name}`} title="Ver">
                     <Eye aria-hidden="true" />
                   </Link>
-                  <Link href={`/negocios/${b.id}/editar`} className={buttonClasses("ghost", "icon")} aria-label={`Editar ${b.name}`} title="Editar">
+                  <Link href={businessEditHref(b.id)} className={buttonClasses("ghost", "icon")} aria-label={`Editar ${b.name}`} title="Editar">
                     <Pencil aria-hidden="true" />
                   </Link>
                   <Button
