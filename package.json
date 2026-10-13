@@ -2,14 +2,12 @@
   "name": "preguntas_para_negocios",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@11.1.1"
-}
   "scripts": {
     "dev": "next dev --webpack",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "parse:niches": "node scripts/parse-niches.mjs",
+    "parse:niches": "node scripts/parse-niches.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.55.0",
