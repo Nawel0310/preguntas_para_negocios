@@ -1,5 +1,3 @@
-import { Badge } from "@/components/ui/badge";
-import { formatUsd } from "@/lib/format";
 import type { Niche } from "@/lib/types";
 
 /** Problemas típicos del nicho con la solución que resuelve cada uno */
@@ -19,12 +17,7 @@ export function NichePreview({ niche }: { niche: Niche }) {
                 <p className="text-sm font-medium first-letter:uppercase">{p.text}</p>
                 {s ? (
                   <div className="flex flex-col gap-1 rounded-md bg-muted/60 p-2.5 text-sm">
-                    <div className="flex flex-wrap items-center justify-between gap-2">
-                      <span className="font-medium">→ {s.name}</span>
-                      <Badge tone="primary" className="tabular-nums">
-                        {formatUsd(s.priceMin, s.priceMax)}
-                      </Badge>
-                    </div>
+                    <span className="font-medium">→ {s.name}</span>
                     {s.value ? <p className="font-medium text-foreground/80">{s.value}</p> : null}
                     <p className="text-muted-foreground">{s.description}</p>
                     <details className="text-muted-foreground">

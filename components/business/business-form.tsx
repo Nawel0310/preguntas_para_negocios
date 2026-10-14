@@ -24,11 +24,11 @@ import {
 import { createBusiness, nameKey } from "@/lib/business";
 import { cn } from "@/lib/cn";
 import { businessHref } from "@/lib/routes";
-import { formatUsd } from "@/lib/format";
 import { orderProblems, scoreBusiness, VERDICT_META } from "@/lib/scoring";
 import { getBusinesses, saveBusiness, useBusinesses } from "@/lib/storage";
 import type { Answer, Business, Commitment, Niche, Phase } from "@/lib/types";
 import { WithNiche } from "./niche-boundary";
+import { NextStepGuide } from "./next-step-guide";
 import { PairChecklist } from "./pair-checklist";
 import { QuestionField } from "./question-field";
 import { SummaryLines } from "./summary-lines";
@@ -254,7 +254,16 @@ export function BusinessForm({ initial, defaultNicheId }: { initial?: Business; 
                       </WithNiche>
                     );
                   })}
-                  {current.id === "cierre" ? <CommitmentBlock draft={draft} update={update} /> : null}
+                  {current.id === "cierre" ? (
+                    <>
+                      {draft.nicheId ? (
+                        <WithNiche id={draft.nicheId}>
+                          {(niche) => <NextStepGuide niche={niche} draft={draft} validatedIds={score.validatedProblemIds} />}
+                        </WithNiche>
+                      ) : null}
+                      <CommitmentBlock draft={draft} update={update} />
+                    </>
+                  ) : null}
                 </>
               )}
             </CardContent>
@@ -625,7 +634,6 @@ function ProblemsStep({
                 <p className="rounded-lg bg-muted/60 p-3 text-sm">
                   <span className="font-medium">Si se valida → {solution.name}</span>
                   {solution.value ? <span className="text-muted-foreground"> · {solution.value}</span> : null}
-                  <span className="text-muted-foreground"> · {formatUsd(solution.priceMin, solution.priceMax)}</span>
                 </p>
               ) : null}
             </div>

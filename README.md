@@ -13,7 +13,7 @@ Con las respuestas clasificadas, la app calcula un **puntaje**, da un **veredict
 
 ## Funcionalidades
 
-- **Catálogo de nichos.** 138 nichos agrupados en 63 categorías, con sus problemas típicos, la solución para cada problema (descripción, qué incluye, rango en USD) y la estrategia de contacto recomendada (canal, efectividad y consejos).
+- **Catálogo de nichos.** 138 nichos agrupados en 63 categorías, con sus problemas típicos, la solución para cada problema (descripción y qué incluye) y la estrategia de contacto recomendada (canal, efectividad y consejos).
 - **Entrevista guiada.** Un formulario en 7 pasos:
   1. Datos del negocio (nombre, nicho, contacto, canal, presencial u online).
   2. Apertura.
@@ -62,7 +62,7 @@ Desde el nicho podés tocar **"Prospectar un negocio de este nicho"** para empez
 
 En **Nuevo prospecto**, cargá el nombre del negocio y elegí el nicho. Desde ese momento **se guarda solo**.
 
-Apenas elegís el nicho aparecen sus **problemas típicos y la solución de cada uno** (con precio y qué incluye), para que sepas por dónde guiar la charla. Son hipótesis para vos: no se las leas al cliente.
+Apenas elegís el nicho aparecen sus **problemas típicos y la solución de cada uno** (con qué incluye), para que sepas por dónde guiar la charla. Son hipótesis para vos: no se las leas al cliente.
 
 Recorré los pasos con **Siguiente**, o tocá cualquier paso del indicador de arriba. En cada pregunta:
 
@@ -86,6 +86,11 @@ Si el cliente lo mencionó por su cuenta con un caso claro, también podés marc
 
 En **Cierre y compromiso**:
 
+- Seguí la guía **Próximo paso**, que cambia según lo validado y el compromiso que ya tenés, con frases listas para decir:
+  - sin problemas validados: no ofrezcas nada; anclá hechos y pedí un referido;
+  - con problema validado y sin compromiso: nombrá el valor de la solución y pedí una reunión con fecha para mostrar una maqueta;
+  - con compromiso de tiempo o reputación: en esa reunión pedí seña o piloto pago, con el precio anclado en lo que ya gasta;
+  - con compromiso de dinero: asegurá el "cómo" de la implementación.
 - Marcá los criterios de **early evangelist** que demostró: tiene el problema, sabe que lo tiene, buscó una solución, armó un parche propio, tiene presupuesto.
 - Registrá el **compromiso** que conseguiste: ninguno, tiempo, reputación o dinero. Sin compromiso no hay cliente.
 
@@ -113,7 +118,7 @@ El puntaje final nunca pasa de 100. Solo cuentan los problemas del nicho actual.
 
 Los cumplidos restan 3 puntos cada uno, hasta un máximo de 15. Los pesos se ajustan en `lib/scoring.ts`.
 
-En el detalle del negocio vas a ver las **soluciones recomendadas**: solo las que resuelven problemas validados, con su precio y el rango combinado.
+En el detalle del negocio vas a ver las **soluciones recomendadas**: solo las que resuelven problemas validados. El precio no se muestra: se acuerda con cada cliente.
 
 ### 4. Gestionar los negocios
 

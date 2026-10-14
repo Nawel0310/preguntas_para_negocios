@@ -3,10 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, Plus } from "lucide-react";
 import { ContactStrategy } from "@/components/niches/contact-strategy";
-import { Badge } from "@/components/ui/badge";
 import { buttonClasses } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { formatUsd } from "@/lib/format";
 import { CATEGORY_BY_ID } from "@/lib/niches";
 import { ALL_NICHES, getNiche } from "@/lib/niches-server";
 
@@ -57,15 +55,10 @@ export default async function NichePage({ params }: PageProps<"/nichos/[id]">) {
                 </CardHeader>
                 {s ? (
                   <CardContent className="flex flex-col gap-2 border-t border-border pt-4">
-                    <div className="flex flex-wrap items-start justify-between gap-2">
-                      <h3 className="font-semibold">
-                        {s.name}
-                        {s.value ? <span className="block text-sm font-normal text-muted-foreground">{s.value}</span> : null}
-                      </h3>
-                      <Badge tone="primary" className="tabular-nums">
-                        {formatUsd(s.priceMin, s.priceMax)}
-                      </Badge>
-                    </div>
+                    <h3 className="font-semibold">
+                      {s.name}
+                      {s.value ? <span className="block text-sm font-normal text-muted-foreground">{s.value}</span> : null}
+                    </h3>
                     <p className="text-sm">{s.description}</p>
                     <ul className="list-disc pl-5 text-sm text-muted-foreground">
                       {s.deliverables.map((d) => (

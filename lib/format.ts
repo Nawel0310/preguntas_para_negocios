@@ -6,8 +6,6 @@ const dateTimeFmt = new Intl.DateTimeFormat("es-AR", {
   hour: "2-digit",
   minute: "2-digit",
 });
-const usd = new Intl.NumberFormat("es-AR", { maximumFractionDigits: 0 });
 
 export const formatDate = (iso: string) => dateFmt.format(new Date(iso));
 export const formatDateTime = (iso: string) => dateTimeFmt.format(new Date(iso));
-export const formatUsd = (min: number, max: number) => `USD ${usd.format(min)} – ${usd.format(max)}`;

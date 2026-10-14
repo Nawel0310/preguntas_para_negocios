@@ -13,12 +13,16 @@ const REPLY_STYLES: Record<SummaryReply, string> = {
   no: "aria-checked:border-red-500 aria-checked:bg-red-500/15 aria-checked:text-red-800 dark:aria-checked:text-red-300",
 };
 
-const lowerFirst = (s: string) => s.charAt(0).toLowerCase() + s.slice(1);
+export const lowerFirst = (s: string) => s.charAt(0).toLowerCase() + s.slice(1);
+
+/** Proceso + dolor en 2.ª persona: "tomás turnos por WhatsApp y se te pisan…" */
+export function problemBody(p: Problem): string {
+  return p.process && p.pain ? `${p.process} y ${p.pain}` : lowerFirst(p.text.replace(/[.\s]+$/, ""));
+}
 
 /** "Entonces, si entendí bien, hoy tomás turnos por WhatsApp y se te pisan…, ¿correcto?" */
 export function summaryLine(p: Problem): string {
-  const body = p.process && p.pain ? `${p.process} y ${p.pain}` : lowerFirst(p.text.replace(/[.\s]+$/, ""));
-  return `“Entonces, si entendí bien, hoy ${body}, ¿correcto?”`;
+  return `“Entonces, si entendí bien, hoy ${problemBody(p)}, ¿correcto?”`;
 }
 
 /** Problemas que entran en el resumen: validados o con interés (mencionado / elegido), más los ya respondidos */

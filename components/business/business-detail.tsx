@@ -21,7 +21,7 @@ import {
   SUMMARY_REPLY_OPTIONS,
   type Question,
 } from "@/data/questions";
-import { formatDateTime, formatUsd } from "@/lib/format";
+import { formatDateTime } from "@/lib/format";
 import { categoryOfNiche, nicheName } from "@/lib/niches";
 import { businessEditHref } from "@/lib/routes";
 import { orderProblems, scoreBusiness, VERDICT_META } from "@/lib/scoring";
@@ -297,10 +297,6 @@ function NicheSections({ niche, business, validated }: { niche: Niche; business:
     const s = solutionByProblem.get(p.id);
     return s && validSet.has(p.id) ? [s] : [];
   });
-  const total = recommended.reduce(
-    (acc, s) => ({ min: acc.min + s.priceMin, max: acc.max + s.priceMax }),
-    { min: 0, max: 0 },
-  );
 
   return (
     <>
@@ -316,37 +312,25 @@ function NicheSections({ niche, business, validated }: { niche: Niche; business:
               prospecto.
             </p>
           ) : (
-            <div className="flex flex-col gap-3">
-              <ul className="grid gap-3 md:grid-cols-2">
-                {recommended.map((s) => (
-                  <li key={s.id} className="flex flex-col gap-2 rounded-xl border border-primary/50 bg-primary/5 p-4">
-                    <div className="flex flex-wrap items-start justify-between gap-2">
-                      <h3 className="font-semibold">
-                        {s.name}
-                        {s.value ? <span className="block text-sm font-normal text-muted-foreground">{s.value}</span> : null}
-                      </h3>
-                      <Badge tone="primary" className="tabular-nums">
-                        {formatUsd(s.priceMin, s.priceMax)}
-                      </Badge>
-                    </div>
-                    <p className="text-sm">{s.description}</p>
-                    <details className="text-sm">
-                      <summary className="text-muted-foreground hover:text-foreground">Qué incluye</summary>
-                      <ul className="mt-2 list-disc pl-5 text-muted-foreground">
-                        {s.deliverables.map((d) => (
-                          <li key={d}>{d}</li>
-                        ))}
-                      </ul>
-                    </details>
-                  </li>
-                ))}
-              </ul>
-              {recommended.length > 1 ? (
-                <p className="text-sm text-muted-foreground">
-                  Rango combinado: <strong className="tabular-nums text-foreground">{formatUsd(total.min, total.max)}</strong>
-                </p>
-              ) : null}
-            </div>
+            <ul className="grid gap-3 md:grid-cols-2">
+              {recommended.map((s) => (
+                <li key={s.id} className="flex flex-col gap-2 rounded-xl border border-primary/50 bg-primary/5 p-4">
+                  <h3 className="font-semibold">
+                    {s.name}
+                    {s.value ? <span className="block text-sm font-normal text-muted-foreground">{s.value}</span> : null}
+                  </h3>
+                  <p className="text-sm">{s.description}</p>
+                  <details className="text-sm">
+                    <summary className="text-muted-foreground hover:text-foreground">Qué incluye</summary>
+                    <ul className="mt-2 list-disc pl-5 text-muted-foreground">
+                      {s.deliverables.map((d) => (
+                        <li key={d}>{d}</li>
+                      ))}
+                    </ul>
+                  </details>
+                </li>
+              ))}
+            </ul>
           )}
         </CardContent>
       </Card>
