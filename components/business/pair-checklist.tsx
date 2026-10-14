@@ -67,12 +67,12 @@ export function PairChecklist({
               <span className="flex min-w-0 flex-1 flex-col gap-0.5">
                 <span className="first-letter:uppercase">{item.label}</span>
                 {item.detail ? <span className="text-xs text-muted-foreground">{item.detail}</span> : null}
+                {item.paired ? (
+                  <Badge tone="accent" className="mt-1 self-start">
+                    {pairedLabel}
+                  </Badge>
+                ) : null}
               </span>
-              {item.paired ? (
-                <Badge tone="accent" className="self-center">
-                  {pairedLabel}
-                </Badge>
-              ) : null}
             </label>
           );
         })}

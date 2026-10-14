@@ -224,7 +224,7 @@ export function BusinessList() {
       </div>
 
       {/* Filtros */}
-      <div role="search" className="grid gap-3 rounded-xl border border-border bg-card p-4 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr_1fr]">
+      <div role="search" className="grid grid-cols-1 gap-3 rounded-xl border border-border bg-card p-4 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr_1fr]">
         <div className="relative sm:col-span-2 lg:col-span-1">
           <label htmlFor="f-q" className="sr-only">
             Buscar por nombre

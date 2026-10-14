@@ -352,7 +352,7 @@ function DataStep({
   const [blurred, setBlurred] = useState(false);
   const showName = (touched || blurred) && nameError;
   return (
-    <div className="grid gap-5 sm:grid-cols-2">
+    <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
       <Field label="Nombre del negocio" htmlFor="b-name" required error={showName ? nameError : null} className="sm:col-span-2">
         <Input
           id="b-name"
@@ -399,9 +399,11 @@ function DataStep({
       {draft.nicheId ? (
         <details open className="group rounded-xl border border-border bg-card sm:col-span-2">
           <summary className="flex min-h-12 items-center gap-2 px-4 py-3 marker:content-none [&::-webkit-details-marker]:hidden">
-            <ArrowRight className="size-4 text-muted-foreground transition-transform duration-200 group-open:rotate-90" aria-hidden="true" />
-            <span className="font-medium">Problemas típicos y soluciones</span>
-            <span className="text-sm text-muted-foreground">· para guiarte, no para leérselos</span>
+            <ArrowRight className="size-4 shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-90" aria-hidden="true" />
+            <span className="flex min-w-0 flex-wrap items-baseline gap-x-2">
+              <span className="font-medium">Problemas típicos y soluciones</span>
+              <span className="text-sm text-muted-foreground">· para guiarte, no para leérselos</span>
+            </span>
           </summary>
           <div className="border-t border-border p-4">
             <WithNiche id={draft.nicheId}>{(niche) => <NichePreview niche={niche} />}</WithNiche>
@@ -555,37 +557,40 @@ function ProblemsStep({
               <span className="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-muted text-xs font-semibold tabular-nums">
                 {pi + 1}
               </span>
-              <span className="flex-1">
-                <span className="block text-xs font-medium uppercase tracking-wide text-muted-foreground">Hipótesis</span>
-                <span className="block font-medium first-letter:uppercase">{problem.text}</span>
-              </span>
-              <span className="flex flex-col items-end gap-1.5">
-                {isValid ? (
-                  <Badge tone="success">
-                    <Check aria-hidden="true" /> Validado
-                  </Badge>
-                ) : (
-                  <Badge>Sin validar</Badge>
-                )}
-                {wanted.has(problem.id) ? <Badge tone="accent">Es prioridad</Badge> : null}
-                <label
-                  className={cn(
-                    "inline-flex h-8 items-center gap-1.5 rounded-full border px-2.5 text-xs font-medium transition-colors duration-150",
-                    "has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-ring",
-                    isMentioned
-                      ? "border-accent/60 bg-accent/15 text-[hsl(272_70%_42%)] dark:text-[hsl(272_95%_78%)]"
-                      : "border-border text-muted-foreground hover:bg-muted",
+              {/* Mobile: badges debajo del texto; desde sm, columna angosta a la derecha */}
+              <span className="flex min-w-0 flex-1 flex-col gap-2 sm:flex-row sm:items-start sm:justify-between sm:gap-3">
+                <span className="min-w-0">
+                  <span className="block text-xs font-medium uppercase tracking-wide text-muted-foreground">Hipótesis</span>
+                  <span className="block font-medium first-letter:uppercase">{problem.text}</span>
+                </span>
+                <span className="flex flex-wrap items-center gap-1.5 sm:shrink-0 sm:flex-col sm:items-end">
+                  {isValid ? (
+                    <Badge tone="success">
+                      <Check aria-hidden="true" /> Validado
+                    </Badge>
+                  ) : (
+                    <Badge>Sin validar</Badge>
                   )}
-                >
-                  <input
-                    type="checkbox"
-                    checked={isMentioned}
-                    onChange={() => toggle("problemsMentioned", problem.id)}
-                    className="sr-only"
-                  />
-                  {isMentioned ? <Check className="size-3.5" aria-hidden="true" /> : null}
-                  Lo mencionó
-                </label>
+                  {wanted.has(problem.id) ? <Badge tone="accent">Es prioridad</Badge> : null}
+                  <label
+                    className={cn(
+                      "inline-flex h-8 items-center gap-1.5 rounded-full border px-2.5 text-xs font-medium transition-colors duration-150",
+                      "has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-ring",
+                      isMentioned
+                        ? "border-accent/60 bg-accent/15 text-[hsl(272_70%_42%)] dark:text-[hsl(272_95%_78%)]"
+                        : "border-border text-muted-foreground hover:bg-muted",
+                    )}
+                  >
+                    <input
+                      type="checkbox"
+                      checked={isMentioned}
+                      onChange={() => toggle("problemsMentioned", problem.id)}
+                      className="sr-only"
+                    />
+                    {isMentioned ? <Check className="size-3.5" aria-hidden="true" /> : null}
+                    Lo mencionó
+                  </label>
+                </span>
               </span>
             </summary>
             <div className="flex flex-col gap-7 border-t border-border p-4">

@@ -90,7 +90,7 @@ export function BusinessDetail({ business }: { business: Business }) {
         </div>
       </div>
 
-      <div className="grid gap-4 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
         <Card className="lg:col-span-2">
           <CardHeader>
             <CardTitle>Veredicto</CardTitle>
@@ -362,11 +362,14 @@ function NicheSections({ niche, business, validated }: { niche: Niche; business:
                 <span className="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-muted text-xs font-semibold tabular-nums">
                   {i + 1}
                 </span>
-                <span className="flex-1 font-medium first-letter:uppercase">{p.text}</span>
-                <span className="flex flex-wrap justify-end gap-1.5">
-                  {mentioned.has(p.id) ? <Badge tone="accent">Lo mencionó</Badge> : null}
-                  {wanted.has(p.id) ? <Badge tone="accent">Es prioridad</Badge> : null}
-                  {validSet.has(p.id) ? <Badge tone="success">Validado</Badge> : <Badge>Sin validar</Badge>}
+                {/* Mobile: badges debajo del texto; desde sm, columna angosta a la derecha */}
+                <span className="flex min-w-0 flex-1 flex-col gap-2 sm:flex-row sm:items-start sm:justify-between sm:gap-3">
+                  <span className="min-w-0 font-medium first-letter:uppercase">{p.text}</span>
+                  <span className="flex flex-wrap gap-1.5 sm:shrink-0 sm:flex-col sm:items-end">
+                    {mentioned.has(p.id) ? <Badge tone="accent">Lo mencionó</Badge> : null}
+                    {wanted.has(p.id) ? <Badge tone="accent">Es prioridad</Badge> : null}
+                    {validSet.has(p.id) ? <Badge tone="success">Validado</Badge> : <Badge>Sin validar</Badge>}
+                  </span>
                 </span>
               </summary>
               <div className="divide-y divide-border border-t border-border p-4">
