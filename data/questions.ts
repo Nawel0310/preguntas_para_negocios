@@ -23,6 +23,10 @@ export interface Question {
   perProblem?: boolean;
   /** Pregunta clave para considerar validado un problema */
   key?: boolean;
+  /** En vez de anotar, se marca el match con el nicho: soluciones (valor) o problemas */
+  checklist?: "solutions" | "problems";
+  /** Se repite como una línea de resumen por cada problema mencionado o validado */
+  summary?: boolean;
 }
 
 export const PHASES: { id: Phase; title: string; description: string }[] = [
@@ -48,7 +52,7 @@ export const PHASES: { id: Phase; title: string; description: string }[] = [
     id: "decision",
     title: "Presupuesto y decisión",
     description:
-      "Quién decide, de dónde sale la plata y cuánto paga hoy por parches.",
+      "Quién decide, quién más se ve afectado y cuánto paga hoy por parches.",
   },
   {
     id: "cierre",
@@ -74,30 +78,20 @@ export const QUESTIONS: Question[] = [
   {
     id: "open-role",
     phase: "apertura",
-    text: "Contame un poco de vos: ¿qué hacés vos en el día a día del negocio?",
-    goal: "Saber si hablás con quien decide o con un intermediario.",
+    text: "Contame un poco de vos: ¿qué hacés vos en el día a día del negocio? ¿Cómo suele ser una semana típica en el negocio?",
+    goal: "Saber si hablás con quien decide y ver dónde se va el tiempo, sin mencionar tu solución.",
     legend: {
-      good: "Describe tareas concretas y deja claro si decide (\"yo me encargo de…\").",
-      redFlag: "Mucho \"nosotros/ellos\" y poco \"yo\": puede no tener poder de decisión.",
+      good: "Describe tareas, horarios y quién hace qué; deja claro si decide (\"yo me encargo de…\"). Aparecen dolores solos.",
+      redFlag: "Mucho \"nosotros/ellos\" y poco \"yo\", o \"normal, tranqui\" → anclá: \"¿y la semana pasada, qué hiciste?\"",
     },
     source: "voss",
   },
 
   // ---------- Vida y prioridades (Mom Test) ----------
   {
-    id: "life-typical-week",
-    phase: "vida",
-    text: "¿Cómo es una semana típica en el negocio? Contame la última que tuviste.",
-    goal: "Ver dónde se va el tiempo sin mencionar tu solución.",
-    legend: {
-      good: "Relata tareas reales, horarios, quién hace qué; aparecen dolores solos.",
-      redFlag: "Respuestas genéricas (\"normal, tranqui\") → anclá: \"¿y ayer, qué hiciste?\"",
-    },
-    source: "mom-test",
-  },
-  {
     id: "life-priorities",
     phase: "vida",
+    checklist: "solutions",
     text: "¿Cuáles son tus 3 prioridades ahora mismo en el negocio?",
     goal: "Si tu problema no aparece en el top 3, probablemente no es urgente para él.",
     legend: {
@@ -109,6 +103,7 @@ export const QUESTIONS: Question[] = [
   {
     id: "life-hardest",
     phase: "vida",
+    checklist: "problems",
     text: "¿Qué es lo que más tiempo o dolores de cabeza te lleva hoy? ¿Por qué?",
     goal: "Que el problema real aparezca por iniciativa propia.",
     legend: {
@@ -207,17 +202,6 @@ export const QUESTIONS: Question[] = [
     source: "mom-test",
   },
   {
-    id: "dec-budget",
-    phase: "decision",
-    text: "¿De dónde sale el presupuesto para este tipo de cosas?",
-    goal: "Confirmar que existe plata asignable al problema.",
-    legend: {
-      good: "Hay una partida, un gasto actual que se reemplaza o un monto que maneja libremente.",
-      redFlag: "\"No tenemos plata para nada\" sin matices: cuidado, lo tolera.",
-    },
-    source: "mom-test",
-  },
-  {
     id: "dec-team-impact",
     phase: "decision",
     text: "¿Cómo afecta esto al resto de tu equipo?",
@@ -233,8 +217,9 @@ export const QUESTIONS: Question[] = [
   {
     id: "close-summary",
     phase: "cierre",
-    text: "Resumen: \"Entonces, si entendí bien, hoy [proceso] y eso te cuesta [costo]…\" ¿Es así?",
-    goal: "Lograr el \"así es\" (no un \"tenés razón\", que es una forma de cortarte).",
+    summary: true,
+    text: "Resumí cada problema: \"Entonces, si entendí bien, hoy [proceso] y [lo que eso te trae], ¿correcto?\"",
+    goal: "Lograr el \"así es\" en cada uno (no un \"tenés razón\", que es una forma de cortarte). Los validados van primero.",
     legend: {
       good: "\"Así es\", \"exacto\", y agrega más detalles por su cuenta.",
       redFlag: "\"Tenés razón\" o \"sí, puede ser\": todavía no te entendió ni se comprometió.",
@@ -340,3 +325,11 @@ export const SIGNAL_OPTIONS = [
     hint: "\"Qué buena idea\", \"lo usaría\", \"pagaría\"",
   },
 ] as const;
+
+export const SUMMARY_REPLY_OPTIONS = [
+  { id: "yes", label: "Así es", hint: "Lo confirma y suma detalles: cuenta como hecho" },
+  { id: "maybe", label: "Puede ser", hint: "\"Tenés razón\", \"sí, puede ser\": todavía no te entendió" },
+  { id: "no", label: "No", hint: "No le pasa así: el problema no queda validado" },
+] as const;
+
+export const QUESTION_IDS = new Set(QUESTIONS.map((q) => q.id));

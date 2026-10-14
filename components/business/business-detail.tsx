@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useMemo, useState } from "react";
+import { useMemo, useState, type ReactNode } from "react";
 import { ArrowLeft, Download, Pencil, Trash2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button, buttonClasses } from "@/components/ui/button";
@@ -18,20 +18,24 @@ import {
   PHASES,
   QUESTIONS_BY_PHASE,
   SIGNAL_OPTIONS,
+  SUMMARY_REPLY_OPTIONS,
   type Question,
 } from "@/data/questions";
 import { formatDateTime, formatUsd } from "@/lib/format";
 import { categoryOfNiche, nicheName } from "@/lib/niches";
 import { businessEditHref } from "@/lib/routes";
-import { scoreBusiness, VERDICT_META } from "@/lib/scoring";
+import { orderProblems, scoreBusiness, VERDICT_META } from "@/lib/scoring";
 import { deleteBusinesses } from "@/lib/storage";
 import { downloadJson } from "@/lib/transfer";
 import type { Answer, Business, Niche } from "@/lib/types";
 import { WithNiche } from "./niche-boundary";
+import { summaryLine, summaryProblems } from "./summary-lines";
 import { ScoreMeter, VerdictBadge } from "./verdict";
 
 const SIGNAL_LABEL = new Map(SIGNAL_OPTIONS.map((o) => [o.id, o.label]));
 const SIGNAL_TONE = { fact: "success", vague: "warning", compliment: "danger" } as const;
+const REPLY_LABEL = new Map(SUMMARY_REPLY_OPTIONS.map((o) => [o.id, o.label]));
+const REPLY_TONE = { yes: "success", maybe: "warning", no: "danger" } as const;
 
 const slug = (s: string) =>
   s
@@ -141,9 +145,13 @@ export function BusinessDetail({ business }: { business: Business }) {
         </WithNiche>
       ) : null}
 
-      {PHASES.filter((p) => p.id !== "problemas").map((phase) => (
-        <AnswerGroup key={phase.id} title={phase.title} questions={QUESTIONS_BY_PHASE[phase.id]} answers={business.answers} />
-      ))}
+      {business.nicheId ? (
+        <WithNiche id={business.nicheId}>
+          {(niche) => <PhaseAnswers business={business} niche={niche} validated={score.validatedProblemIds} />}
+        </WithNiche>
+      ) : (
+        <PhaseAnswers business={business} validated={score.validatedProblemIds} />
+      )}
 
       {business.objections.length > 0 || business.notes ? (
         <Card>
@@ -199,41 +207,96 @@ function Stat({ label, value }: { label: string; value: number }) {
   );
 }
 
-function AnswerItem({ question, answer }: { question: Question; answer?: Answer }) {
-  const has = answer && (answer.text.trim() || answer.signal);
+function AnswerItem({ question, answer, children }: { question: Question; answer?: Answer; children?: ReactNode }) {
+  const note = answer?.text.trim();
   return (
     <div className="flex flex-col gap-1.5 py-3 first:pt-0 last:pb-0">
       <div className="flex flex-wrap items-start justify-between gap-2">
         <p className="font-medium">{question.text}</p>
         {answer?.signal ? <Badge tone={SIGNAL_TONE[answer.signal]}>{SIGNAL_LABEL.get(answer.signal)}</Badge> : null}
       </div>
-      {has && answer.text.trim() ? (
-        <p className="whitespace-pre-wrap text-sm">{answer.text}</p>
-      ) : (
+      {children}
+      {note ? (
+        <p className="whitespace-pre-wrap text-sm text-muted-foreground">{note}</p>
+      ) : !answer?.signal && !children ? (
         <p className="text-sm italic text-muted-foreground">Sin respuesta</p>
-      )}
+      ) : null}
     </div>
   );
 }
 
-function AnswerGroup({ title, questions, answers }: { title: string; questions: Question[]; answers: Record<string, Answer> }) {
-  return (
-    <Card>
+/** Respuestas por fase; con el nicho cargado muestra también los checklists y el resumen */
+function PhaseAnswers({ business, niche, validated }: { business: Business; niche?: Niche; validated: string[] }) {
+  const solutionByProblem = new Map(niche?.solutions.map((s) => [s.problemId, s]));
+  const marked = (ids: string[], label: (problemId: string) => string | undefined) =>
+    ids.length > 0 ? (
+      <ul className="list-disc pl-5 text-sm">
+        {ids.map((id) => {
+          const text = label(id);
+          return text ? (
+            <li key={id} className="first-letter:uppercase">
+              {text}
+            </li>
+          ) : null;
+        })}
+      </ul>
+    ) : null;
+
+  const extra = (q: Question): ReactNode => {
+    if (!niche) return null;
+    if (q.checklist === "solutions")
+      return marked(business.solutionsWanted, (id) => {
+        const s = solutionByProblem.get(id);
+        return s?.value ?? s?.name;
+      });
+    if (q.checklist === "problems")
+      return marked(business.problemsMentioned, (id) => niche.problems.find((p) => p.id === id)?.text);
+    if (q.summary) {
+      const lines = summaryProblems(niche, business, validated);
+      return lines.length > 0 ? (
+        <ul className="flex flex-col gap-2 text-sm">
+          {lines.map(({ problem }) => {
+            const reply = business.summaryReplies[problem.id];
+            return (
+              <li key={problem.id} className="flex flex-wrap items-start justify-between gap-2">
+                <span className="flex-1">{summaryLine(problem)}</span>
+                {reply ? <Badge tone={REPLY_TONE[reply]}>{REPLY_LABEL.get(reply)}</Badge> : <Badge>Sin respuesta</Badge>}
+              </li>
+            );
+          })}
+        </ul>
+      ) : null;
+    }
+    return null;
+  };
+
+  return PHASES.filter((p) => p.id !== "problemas").map((phase) => (
+    <Card key={phase.id}>
       <CardHeader>
-        <CardTitle>{title}</CardTitle>
+        <CardTitle>{phase.title}</CardTitle>
       </CardHeader>
       <CardContent className="divide-y divide-border">
-        {questions.map((q) => (
-          <AnswerItem key={q.id} question={q} answer={answers[q.id]} />
+        {QUESTIONS_BY_PHASE[phase.id].map((q) => (
+          <AnswerItem key={q.id} question={q} answer={business.answers[q.id]}>
+            {extra(q)}
+          </AnswerItem>
         ))}
       </CardContent>
     </Card>
-  );
+  ));
 }
 
 function NicheSections({ niche, business, validated }: { niche: Niche; business: Business; validated: string[] }) {
   const validSet = new Set(validated);
-  const recommended = niche.solutions.filter((s) => s.problemId && validSet.has(s.problemId));
+  const mentioned = new Set(business.problemsMentioned);
+  const wanted = new Set(business.solutionsWanted);
+  const ordered = orderProblems(niche.problems, business, validated).map(({ problem, index }) => ({ p: problem, i: index }));
+  const solutionByProblem = new Map(niche.solutions.map((s) => [s.problemId, s]));
+  // Mismo orden: las que además mencionó como problema y prioridad van primero
+  const recommended = ordered.flatMap(({ p }) => {
+    const s = solutionByProblem.get(p.id);
+    return s && validSet.has(p.id) ? [s] : [];
+  });
   const total = recommended.reduce(
     (acc, s) => ({ min: acc.min + s.priceMin, max: acc.max + s.priceMax }),
     { min: 0, max: 0 },
@@ -258,7 +321,10 @@ function NicheSections({ niche, business, validated }: { niche: Niche; business:
                 {recommended.map((s) => (
                   <li key={s.id} className="flex flex-col gap-2 rounded-xl border border-primary/50 bg-primary/5 p-4">
                     <div className="flex flex-wrap items-start justify-between gap-2">
-                      <h3 className="font-semibold">{s.name}</h3>
+                      <h3 className="font-semibold">
+                        {s.name}
+                        {s.value ? <span className="block text-sm font-normal text-muted-foreground">{s.value}</span> : null}
+                      </h3>
                       <Badge tone="primary" className="tabular-nums">
                         {formatUsd(s.priceMin, s.priceMax)}
                       </Badge>
@@ -290,14 +356,18 @@ function NicheSections({ niche, business, validated }: { niche: Niche; business:
           <CardTitle>Problemas del nicho</CardTitle>
         </CardHeader>
         <CardContent className="flex flex-col gap-4">
-          {niche.problems.map((p, i) => (
+          {ordered.map(({ p, i }) => (
             <details key={p.id} className="group rounded-xl border border-border" open={validSet.has(p.id)}>
               <summary className="flex min-h-12 items-start gap-3 p-4 marker:content-none [&::-webkit-details-marker]:hidden">
                 <span className="mt-0.5 grid size-6 shrink-0 place-items-center rounded-full bg-muted text-xs font-semibold tabular-nums">
                   {i + 1}
                 </span>
                 <span className="flex-1 font-medium first-letter:uppercase">{p.text}</span>
-                {validSet.has(p.id) ? <Badge tone="success">Validado</Badge> : <Badge>Sin validar</Badge>}
+                <span className="flex flex-wrap justify-end gap-1.5">
+                  {mentioned.has(p.id) ? <Badge tone="accent">Lo mencionó</Badge> : null}
+                  {wanted.has(p.id) ? <Badge tone="accent">Es prioridad</Badge> : null}
+                  {validSet.has(p.id) ? <Badge tone="success">Validado</Badge> : <Badge>Sin validar</Badge>}
+                </span>
               </summary>
               <div className="divide-y divide-border border-t border-border p-4">
                 {PER_PROBLEM_QUESTIONS.map((q) => (

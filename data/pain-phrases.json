@@ -1,0 +1,2737 @@
+{
+  "consultorio-medico-general-o-clinica--p1": {
+    "process": "la secretaria anota los turnos en papel y por WhatsApp a la vez",
+    "pain": "se te pisan dos pacientes a la misma hora",
+    "value": "Que no se pisen los turnos"
+  },
+  "consultorio-medico-general-o-clinica--p2": {
+    "process": "las fichas de los pacientes están en papel o carpetas sueltas",
+    "pain": "cuando alguien vuelve nadie encuentra su historial",
+    "value": "Tener la historia de cada paciente ordenada y a mano"
+  },
+  "consultorio-medico-general-o-clinica--p3": {
+    "process": "corrés atrás de los particulares para cobrarles",
+    "pain": "no sabés bien quién te debe qué",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "consultorio-medico-general-o-clinica--p4": {
+    "process": "nadie les recuerda el turno a los pacientes",
+    "pain": "faltan sin avisar y perdés ese horario",
+    "value": "Que los pacientes no falten sin avisar"
+  },
+  "pediatra-o-neonatologia--p1": {
+    "process": "los papás te piden turno por WhatsApp a cualquier hora",
+    "pain": "se te pisan dos chicos a la misma hora",
+    "value": "Que no se pisen los turnos"
+  },
+  "pediatra-o-neonatologia--p2": {
+    "process": "el historial de cada chico no está todo junto",
+    "pain": "te cuesta armar la curva de crecimiento y el calendario de vacunas",
+    "value": "Tener la curva y las vacunas de cada chico a mano"
+  },
+  "pediatra-o-neonatologia--p3": {
+    "process": "nadie les recuerda los controles y vacunas a los padres",
+    "pain": "faltan sin avisar y se corta el seguimiento",
+    "value": "Que las familias no se olviden de controles y vacunas"
+  },
+  "pediatra-o-neonatologia--p4": {
+    "process": "los papás no tienen dónde ver estudios y vacunas",
+    "pain": "te escriben todo el tiempo para preguntar",
+    "value": "Que las familias consulten solas estudios y vacunas"
+  },
+  "fonoaudiologo-o-terapeuta-del-lenguaje--p1": {
+    "process": "anotás a mano las sesiones semanales de muchos chicos",
+    "pain": "se te pisan los horarios",
+    "value": "Que no se pisen las sesiones"
+  },
+  "fonoaudiologo-o-terapeuta-del-lenguaje--p2": {
+    "process": "el progreso de cada paciente queda en cuadernos sueltos",
+    "pain": "te cuesta reconstruir su evolución",
+    "value": "Ver la evolución de cada paciente sesión a sesión"
+  },
+  "fonoaudiologo-o-terapeuta-del-lenguaje--p3": {
+    "process": "los padres te preguntan cómo va el chico",
+    "pain": "tenés que armar un informe a mano cada vez",
+    "value": "Mostrar el progreso a los padres sin armar informes a mano"
+  },
+  "fonoaudiologo-o-terapeuta-del-lenguaje--p4": {
+    "process": "cobrás sesión por sesión",
+    "pain": "perdés la cuenta de quién pagó y quién debe",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "clinica-dental-general--p1": {
+    "process": "la recepción anota turnos en papel y por WhatsApp a la vez",
+    "pain": "se te pisan dos pacientes en el mismo sillón",
+    "value": "Que no se pisen los turnos"
+  },
+  "clinica-dental-general--p2": {
+    "process": "la ficha odontológica está repartida entre papeles y carpetas",
+    "pain": "perdés tiempo buscándola",
+    "value": "Tener tratamientos y radiografías de cada paciente a mano"
+  },
+  "clinica-dental-general--p3": {
+    "process": "los tratamientos se pagan en cuotas o por sesión",
+    "pain": "perdés el hilo de quién debe la próxima cuota",
+    "value": "Saber al instante quién pagó cada cuota"
+  },
+  "clinica-dental-general--p4": {
+    "process": "nadie les recuerda controles y limpiezas a los pacientes",
+    "pain": "faltan y te queda el sillón parado",
+    "value": "Que los pacientes no falten a controles y limpiezas"
+  },
+  "odontologia-estetica-y-blanqueamiento--p1": {
+    "process": "coordinás blanqueamientos y carillas por WhatsApp",
+    "pain": "se te pisan con los tratamientos largos",
+    "value": "Que no se pisen los turnos"
+  },
+  "odontologia-estetica-y-blanqueamiento--p2": {
+    "process": "armás los presupuestos a mano o por chat",
+    "pain": "quedan sin aprobar y se pierden en la conversación",
+    "value": "Presupuestos en minutos que el paciente aprueba online"
+  },
+  "odontologia-estetica-y-blanqueamiento--p3": {
+    "process": "los tratamientos estéticos se pagan en partes",
+    "pain": "perdés el registro de quién pagó cada seña o cuota",
+    "value": "Saber al instante quién pagó cada seña o cuota"
+  },
+  "odontologia-estetica-y-blanqueamiento--p4": {
+    "process": "no anotás en qué quedó cada interesado",
+    "pain": "se te pierden pacientes que no cerraron",
+    "value": "Hacer seguimiento a cada interesado hasta que cierre"
+  },
+  "centro-de-kinesiologia-y-rehabilitacion--p1": {
+    "process": "la recepción anota a mano los turnos de varios kinesiólogos",
+    "pain": "se te pisan los turnos",
+    "value": "Que no se pisen los turnos entre kinesiólogos"
+  },
+  "centro-de-kinesiologia-y-rehabilitacion--p2": {
+    "process": "la evolución de cada paciente queda en fichas sueltas",
+    "pain": "te cuesta ver su progreso",
+    "value": "Ver la evolución de cada paciente sesión a sesión"
+  },
+  "centro-de-kinesiologia-y-rehabilitacion--p3": {
+    "process": "los tratamientos son de varias sesiones",
+    "pain": "perdés el hilo de quién pagó el paquete",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "centro-de-kinesiologia-y-rehabilitacion--p4": {
+    "process": "nadie les recuerda las sesiones a los pacientes",
+    "pain": "faltan y se corta el tratamiento",
+    "value": "Que los pacientes no falten a las sesiones"
+  },
+  "fisioterapeuta-o-kinesiologo-independiente--p1": {
+    "process": "coordinás vos solo los turnos por WhatsApp entre sesiones",
+    "pain": "se te pisan dos pacientes en el mismo horario",
+    "value": "Que no se pisen los turnos"
+  },
+  "fisioterapeuta-o-kinesiologo-independiente--p2": {
+    "process": "llevás la evolución de cada paciente en un cuaderno o de memoria",
+    "pain": "no te acordás en qué quedó cada uno",
+    "value": "Tener la evolución de cada paciente a mano"
+  },
+  "fisioterapeuta-o-kinesiologo-independiente--p3": {
+    "process": "cobrás cada sesión en efectivo o transferencia",
+    "pain": "perdés la cuenta de quién te debe",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "fisioterapeuta-o-kinesiologo-independiente--p4": {
+    "process": "no tenés una agenda en común con otro colega",
+    "pain": "chocarían los horarios si sumás a alguien",
+    "value": "Compartir la agenda con un colega sin chocar horarios"
+  },
+  "psicologo-o-terapeuta-individual--p1": {
+    "process": "coordinás las sesiones vos mismo por WhatsApp",
+    "pain": "se te pisan dos turnos a la misma hora",
+    "value": "Que no se pisen las sesiones"
+  },
+  "psicologo-o-terapeuta-individual--p2": {
+    "process": "las notas de cada sesión quedan en un cuaderno o archivos sueltos",
+    "pain": "esa información sensible no está protegida",
+    "value": "Tener las notas de cada paciente ordenadas y protegidas"
+  },
+  "psicologo-o-terapeuta-individual--p3": {
+    "process": "cobrás cada sesión por transferencia",
+    "pain": "no tenés un registro de quién pagó y quién debe",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "psicologo-o-terapeuta-individual--p4": {
+    "process": "nadie les recuerda la sesión a los pacientes",
+    "pain": "faltan sin avisar y perdés ese horario",
+    "value": "Que los pacientes no falten sin avisar"
+  },
+  "centro-de-salud-mental-o-psiquiatria--p1": {
+    "process": "la recepción anota a mano los turnos de varios profesionales",
+    "pain": "se pisan pacientes entre consultorios",
+    "value": "Que no se pisen los turnos entre consultorios"
+  },
+  "centro-de-salud-mental-o-psiquiatria--p2": {
+    "process": "la historia clínica pasa por varios profesionales sin estar centralizada",
+    "pain": "cada uno ve una parte distinta",
+    "value": "Tener la historia de cada paciente centralizada para todo el equipo"
+  },
+  "centro-de-salud-mental-o-psiquiatria--p3": {
+    "process": "cada profesional maneja su agenda por separado",
+    "pain": "la coordinación no sabe quién está libre",
+    "value": "Ver la agenda de todo el equipo en un solo lugar"
+  },
+  "centro-de-salud-mental-o-psiquiatria--p4": {
+    "process": "mezclás consultas particulares y de obra social",
+    "pain": "perdés el registro de quién pagó cada una",
+    "value": "Saber al instante quién pagó cada consulta"
+  },
+  "nutricionista-clinica-o-deportiva--p1": {
+    "process": "coordinás las consultas por WhatsApp",
+    "pain": "se te pisan pacientes nuevos y controles",
+    "value": "Que no se pisen los turnos"
+  },
+  "nutricionista-clinica-o-deportiva--p2": {
+    "process": "el peso, las mediciones y el plan quedan en planillas sueltas",
+    "pain": "te cuesta ver la evolución",
+    "value": "Ver la evolución de cada paciente consulta a consulta"
+  },
+  "nutricionista-clinica-o-deportiva--p3": {
+    "process": "los pacientes no tienen dónde ver su plan y mediciones",
+    "pain": "te escriben todo el tiempo pidiéndolos",
+    "value": "Que los pacientes vean solos su plan y mediciones"
+  },
+  "nutricionista-clinica-o-deportiva--p4": {
+    "process": "nadie les recuerda el control mensual",
+    "pain": "faltan y se corta el seguimiento del plan",
+    "value": "Que los pacientes no falten al control"
+  },
+  "nutricionista-online--p1": {
+    "process": "coordinás videoconsultas por Instagram con distintos husos horarios",
+    "pain": "se te pisan los turnos",
+    "value": "Que no se pisen las videoconsultas"
+  },
+  "nutricionista-online--p2": {
+    "process": "mandás planes y cursos por PDF o mail suelto",
+    "pain": "no controlás quién pagó ni quién accede",
+    "value": "Vender planes y cursos con acceso solo para quien pagó"
+  },
+  "nutricionista-online--p3": {
+    "process": "cobrás por transferencia desde distintos países",
+    "pain": "perdés el registro de quién pagó qué",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "nutricionista-online--p4": {
+    "process": "tus pacientes no tienen un lugar propio para ver su plan",
+    "pain": "te escriben para pedirlo",
+    "value": "Que los pacientes vean solos su plan y material"
+  },
+  "clinica-de-medicina-estetica-y-botox--p1": {
+    "process": "agendás a mano varios tratamientos y profesionales",
+    "pain": "se pisan los turnos",
+    "value": "Que no se pisen los turnos entre profesionales"
+  },
+  "clinica-de-medicina-estetica-y-botox--p2": {
+    "process": "la ficha con tratamientos previos y contraindicaciones está en papeles",
+    "pain": "perdés tiempo buscándola antes de cada sesión",
+    "value": "Tener tratamientos previos y contraindicaciones a mano"
+  },
+  "clinica-de-medicina-estetica-y-botox--p3": {
+    "process": "los tratamientos se pagan en sesiones o paquetes",
+    "pain": "perdés el registro de quién pagó cada uno",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "clinica-de-medicina-estetica-y-botox--p4": {
+    "process": "no anotás en qué quedó cada consulta",
+    "pain": "se te pierden leads que no cerraron",
+    "value": "Hacer seguimiento a cada interesado hasta que cierre"
+  },
+  "cirugia-estetica-y-lifting--p1": {
+    "process": "coordinás consultas y controles por distintos canales",
+    "pain": "se te pisan los turnos",
+    "value": "Que no se pisen consultas y controles"
+  },
+  "cirugia-estetica-y-lifting--p2": {
+    "process": "los estudios y la evolución de cada paciente están repartidos",
+    "pain": "no tenés todo ordenado para algo tan delicado",
+    "value": "Tener la historia de cada paciente ordenada y protegida"
+  },
+  "cirugia-estetica-y-lifting--p3": {
+    "process": "armás el presupuesto de la cirugía a mano o por mail",
+    "pain": "el paciente se queda pensando y no queda registro",
+    "value": "Presupuestos en minutos que el paciente aprueba online"
+  },
+  "cirugia-estetica-y-lifting--p4": {
+    "process": "las cirugías se pagan en señas y cuotas",
+    "pain": "perdés el registro de quién pagó cada parte",
+    "value": "Saber quién pagó cada parte antes de operar"
+  },
+  "veterinaria-con-consultorio--p1": {
+    "process": "atendés mostrador y consultorio a la vez",
+    "pain": "se te pisan las consultas con las urgencias",
+    "value": "Que no se pisen consultas y urgencias"
+  },
+  "veterinaria-con-consultorio--p2": {
+    "process": "la historia de cada mascota está en fichas de papel",
+    "pain": "te cuesta encontrarla cuando el dueño vuelve",
+    "value": "Tener la historia de cada mascota a mano"
+  },
+  "veterinaria-con-consultorio--p3": {
+    "process": "cobrás consultas, medicamentos y productos en el mismo momento",
+    "pain": "perdés el registro de quién pagó qué",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "veterinaria-con-consultorio--p4": {
+    "process": "no controlás el stock de medicamentos y vacunas",
+    "pain": "te quedás sin algo en plena atención",
+    "value": "No quedarte sin medicamentos ni vacunas"
+  },
+  "petshop-y-tienda-de-mascotas--p1": {
+    "process": "contestás uno por uno por WhatsApp qué tenés y a cuánto",
+    "pain": "se te va el día en vez de vender",
+    "value": "Que el cliente vea productos y precios y compre solo"
+  },
+  "petshop-y-tienda-de-mascotas--p2": {
+    "process": "no controlás el stock",
+    "pain": "se te agota un alimento sin que lo notes",
+    "value": "No quedarte sin alimentos ni productos"
+  },
+  "petshop-y-tienda-de-mascotas--p3": {
+    "process": "los pedidos te llegan por captura o audio de WhatsApp",
+    "pain": "se te mezclan o se te olvida alguno",
+    "value": "Recibir los pedidos ordenados y completos"
+  },
+  "petshop-y-tienda-de-mascotas--p4": {
+    "process": "cobrás por transferencia",
+    "pain": "perdés el registro de quién pagó cada pedido",
+    "value": "Saber al instante quién pagó cada pedido"
+  },
+  "veterinaria-a-domicilio--p1": {
+    "process": "coordinás las visitas por WhatsApp",
+    "pain": "se te pisan dos citas en zonas opuestas",
+    "value": "Que no se pisen las visitas"
+  },
+  "veterinaria-a-domicilio--p2": {
+    "process": "la historia de cada mascota queda en la memoria o notas del celular",
+    "pain": "no la tenés a mano en cada visita",
+    "value": "Tener la historia de cada mascota a mano"
+  },
+  "veterinaria-a-domicilio--p3": {
+    "process": "armás el recorrido del día a ojo",
+    "pain": "cruzás la ciudad y perdés tiempo y combustible",
+    "value": "Hacer el recorrido más corto entre visitas"
+  },
+  "veterinaria-a-domicilio--p4": {
+    "process": "cobrás en efectivo o transferencia en cada visita",
+    "pain": "perdés el registro de quién pagó",
+    "value": "Saber al instante quién pagó cada visita"
+  },
+  "optica-y-optometria--p1": {
+    "process": "los turnos de control entran por WhatsApp sin una agenda única",
+    "pain": "se te pisan dos a la misma hora",
+    "value": "Que no se pisen los turnos"
+  },
+  "optica-y-optometria--p2": {
+    "process": "nadie sigue cuándo vence la receta o garantía de cada cliente",
+    "pain": "se te escapa la venta del recambio",
+    "value": "Contactar a cada cliente justo cuando le toca el recambio"
+  },
+  "optica-y-optometria--p3": {
+    "process": "no sabés cuántos armazones y cristales tenés",
+    "pain": "el cliente elige uno y no hay stock",
+    "value": "Saber siempre qué armazones y cristales tenés"
+  },
+  "optica-y-optometria--p4": {
+    "process": "andás atrás del cliente para cobrar seña y saldo",
+    "pain": "se te mezclan pagos y pedidos",
+    "value": "Saber al instante quién debe la seña o el saldo"
+  },
+  "centro-de-adaptacion-de-lentes-de-contacto--p1": {
+    "process": "coordinás los turnos a mano por WhatsApp",
+    "pain": "se te superponen dos controles",
+    "value": "Que no se pisen los controles"
+  },
+  "centro-de-adaptacion-de-lentes-de-contacto--p2": {
+    "process": "la historia de adaptación está en papeles sueltos",
+    "pain": "perdés tiempo buscándola en cada control",
+    "value": "Tener la historia de adaptación de cada paciente a mano"
+  },
+  "centro-de-adaptacion-de-lentes-de-contacto--p3": {
+    "process": "cobrás cada reposición de lentes a mano",
+    "pain": "no sabés quién debe la última entrega",
+    "value": "Saber al instante quién está al día con las reposiciones"
+  },
+  "centro-de-adaptacion-de-lentes-de-contacto--p4": {
+    "process": "no registrás cuándo le toca la reposición a cada paciente",
+    "pain": "se te escapa la venta recurrente",
+    "value": "Avisarle a cada paciente cuando le toca reponer"
+  },
+  "spa-y-masajes-terapeuticos--p1": {
+    "process": "las reservas entran por Instagram y WhatsApp sin una agenda única",
+    "pain": "se te pisan dos masajes a la misma hora",
+    "value": "Que no se pisen los turnos"
+  },
+  "spa-y-masajes-terapeuticos--p2": {
+    "process": "no tenés forma de premiar al que vuelve",
+    "pain": "el cliente viene una vez y no vuelve",
+    "value": "Que los clientes vuelvan"
+  },
+  "spa-y-masajes-terapeuticos--p3": {
+    "process": "cobrás paquetes y señas a mano",
+    "pain": "no sabés quién pagó y quién debe",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "spa-y-masajes-terapeuticos--p4": {
+    "process": "cada terapeuta maneja su propia agenda",
+    "pain": "se pisan las citas entre ellas",
+    "value": "Que todo el equipo vea la misma agenda"
+  },
+  "masajista-terapeutico-independiente--p1": {
+    "process": "coordinás tus turnos a mano por WhatsApp",
+    "pain": "se te pisan dos clientas a la misma hora",
+    "value": "Que no se pisen los turnos"
+  },
+  "masajista-terapeutico-independiente--p2": {
+    "process": "perseguís el cobro de cada sesión por WhatsApp",
+    "pain": "se te mezcla quién pagó y quién debe",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "masajista-terapeutico-independiente--p3": {
+    "process": "mandás los recordatorios a mano y a veces te olvidás",
+    "pain": "te dejan plantada",
+    "value": "Que las clientas no te dejen plantada"
+  },
+  "restaurante-o-bar--p1": {
+    "process": "anotás las reservas a mano o por teléfono durante el servicio",
+    "pain": "se te pisan dos reservas para la misma mesa",
+    "value": "Que no se pisen las reservas"
+  },
+  "restaurante-o-bar--p2": {
+    "process": "los pedidos te llegan por audio o captura de WhatsApp",
+    "pain": "se confunde lo que pidió cada mesa o delivery",
+    "value": "Recibir los pedidos ordenados en la cocina"
+  },
+  "restaurante-o-bar--p3": {
+    "process": "no llevás el stock de insumos",
+    "pain": "te quedás sin algo en pleno servicio",
+    "value": "No quedarte sin insumos en pleno servicio"
+  },
+  "restaurante-o-bar--p4": {
+    "process": "no les pedís reseñas a los clientes",
+    "pain": "pesan más las malas opiniones que las buenas",
+    "value": "Juntar buenas reseñas y mejorar tu reputación"
+  },
+  "bar-o-boliche-con-reservas-y-eventos--p1": {
+    "process": "coordinás las reservas a mano por WhatsApp o Instagram",
+    "pain": "se te pisan dos reservas la misma noche",
+    "value": "Que no se pisen las reservas"
+  },
+  "bar-o-boliche-con-reservas-y-eventos--p2": {
+    "process": "cobrás las señas de reservas y mesas VIP a mano",
+    "pain": "no sabés quién pagó antes del evento",
+    "value": "Saber quién pagó la seña antes del evento"
+  },
+  "bar-o-boliche-con-reservas-y-eventos--p3": {
+    "process": "cobrás la membresía de los socios persiguiéndolos uno por uno",
+    "pain": "se te escapan pagos",
+    "value": "Cobrar la membresía todos los meses sin perseguir a nadie"
+  },
+  "bar-o-boliche-con-reservas-y-eventos--p4": {
+    "process": "no les recordás la reserva a los clientes",
+    "pain": "te dejan la mesa vacía en la mejor noche",
+    "value": "Que no te dejen mesas vacías"
+  },
+  "panaderia-artesanal-y-pasteleria--p1": {
+    "process": "los encargos te llegan por audio de WhatsApp",
+    "pain": "se te mezclan o se te olvida un detalle",
+    "value": "Recibir los encargos ordenados y con todo el detalle"
+  },
+  "panaderia-artesanal-y-pasteleria--p2": {
+    "process": "no actualizás el costo con el precio actual de los insumos",
+    "pain": "no sabés cuánto te cuesta cada producto",
+    "value": "Saber el costo real de cada producto"
+  },
+  "panaderia-artesanal-y-pasteleria--p3": {
+    "process": "no llevás el control de cuánto tenés de cada cosa",
+    "pain": "te quedás sin productos en horario pico",
+    "value": "No quedarte sin productos en horario pico"
+  },
+  "panaderia-artesanal-y-pasteleria--p4": {
+    "process": "perseguís el cobro de los encargos grandes",
+    "pain": "se te mezcla quién pagó la seña y quién no",
+    "value": "Saber al instante quién pagó la seña y quién debe"
+  },
+  "pasteleria-por-encargo--p1": {
+    "process": "coordinás entregas y pruebas a mano por WhatsApp",
+    "pain": "se te pisan dos encargos el mismo día",
+    "value": "Que no se pisen las fechas de entrega"
+  },
+  "pasteleria-por-encargo--p2": {
+    "process": "perseguís el cobro de seña y saldo de cada encargo",
+    "pain": "se te mezcla quién pagó y quién no",
+    "value": "Saber al instante quién pagó la seña y quién debe"
+  },
+  "pasteleria-por-encargo--p3": {
+    "process": "no actualizás el costo con el precio actual de los insumos",
+    "pain": "no sabés cuánto te cuesta cada torta",
+    "value": "Saber el costo real de cada torta"
+  },
+  "pasteleria-por-encargo--p4": {
+    "process": "avisás a mano las entregas y pagos pendientes",
+    "pain": "a veces te olvidás de avisarle al cliente",
+    "value": "Que los avisos de entrega y pago salgan solos"
+  },
+  "heladeria-y-confiteria--p1": {
+    "process": "los pedidos de tortas heladas te llegan por audio o captura",
+    "pain": "se te confunde algún detalle del encargo",
+    "value": "Recibir los encargos ordenados y con todo el detalle"
+  },
+  "heladeria-y-confiteria--p2": {
+    "process": "contestás uno por uno qué sabores tenés y a cuánto",
+    "pain": "perdés tiempo sin un catálogo para mostrar",
+    "value": "Que el cliente vea sabores y precios solo"
+  },
+  "heladeria-y-confiteria--p3": {
+    "process": "no actualizás el costo con el precio actual de los insumos",
+    "pain": "no sabés cuánto te cuesta cada producto",
+    "value": "Saber el costo real de cada producto"
+  },
+  "heladeria-y-confiteria--p4": {
+    "process": "perseguís el cobro de los encargos grandes",
+    "pain": "se te mezcla quién pagó la seña y quién no",
+    "value": "Saber al instante quién pagó la seña y quién debe"
+  },
+  "heladeria-para-catering-y-eventos--p1": {
+    "process": "los pedidos para eventos te llegan por audio o mensaje suelto",
+    "pain": "se te mezclan cantidades y sabores",
+    "value": "Recibir los pedidos de eventos ordenados y exactos"
+  },
+  "heladeria-para-catering-y-eventos--p2": {
+    "process": "perseguís seña y saldo de cada evento",
+    "pain": "se te mezcla quién pagó antes de la fecha",
+    "value": "Saber quién está al día antes de cada evento"
+  },
+  "heladeria-para-catering-y-eventos--p3": {
+    "process": "no actualizás el costo con el precio actual de los insumos",
+    "pain": "no sabés cuánto te cuesta cada evento",
+    "value": "Saber el costo real de cada evento"
+  },
+  "heladeria-para-catering-y-eventos--p4": {
+    "process": "no guardás el contacto de los organizadores que trabajaron con vos",
+    "pain": "no sabés cuándo volver a ofrecerles algo",
+    "value": "Volver a venderles a los organizadores en el momento justo"
+  },
+  "cerveceria-artesanal-con-venta-propia--p1": {
+    "process": "contestás uno por uno qué estilos y latas tenés",
+    "pain": "perdés tiempo sin un catálogo online",
+    "value": "Que el cliente vea estilos y precios y compre solo"
+  },
+  "cerveceria-artesanal-con-venta-propia--p2": {
+    "process": "cobrás los pedidos mayoristas a mano",
+    "pain": "se te mezcla quién pagó y quién debe",
+    "value": "Saber al instante quién pagó cada pedido mayorista"
+  },
+  "cerveceria-artesanal-con-venta-propia--p3": {
+    "process": "no actualizás el costo con el precio actual de los insumos",
+    "pain": "no sabés cuánto te cuesta cada lote",
+    "value": "Saber el costo real de cada lote"
+  },
+  "cerveceria-artesanal-con-venta-propia--p4": {
+    "process": "no llevás el stock de latas y barriles",
+    "pain": "te quedás sin un estilo en medio de una venta",
+    "value": "No quedarte sin latas ni barriles"
+  },
+  "tienda-de-insumos-para-cerveza-artesanal--p1": {
+    "process": "contestás uno por uno qué insumos tenés",
+    "pain": "perdés tiempo sin un catálogo online",
+    "value": "Que el cliente vea insumos y precios y compre solo"
+  },
+  "tienda-de-insumos-para-cerveza-artesanal--p2": {
+    "process": "no llevás el stock de lúpulo, malta y levadura",
+    "pain": "un cliente lo pide y no hay",
+    "value": "No quedarte sin insumos cuando te los piden"
+  },
+  "tienda-de-insumos-para-cerveza-artesanal--p3": {
+    "process": "perseguís el cobro de los pedidos",
+    "pain": "se te mezcla quién pagó y quién debe",
+    "value": "Saber al instante quién pagó cada pedido"
+  },
+  "tienda-de-insumos-para-cerveza-artesanal--p4": {
+    "process": "los pedidos te llegan en mensajes sueltos de WhatsApp",
+    "pain": "se te confunden las cantidades",
+    "value": "Recibir los pedidos ordenados y con cantidades exactas"
+  },
+  "chocolateria-y-reposteria-fina--p1": {
+    "process": "en Pascua y Navidad los encargos te llegan por audio o captura",
+    "pain": "se te mezclan los pedidos en plena temporada",
+    "value": "Recibir los encargos ordenados en temporada alta"
+  },
+  "chocolateria-y-reposteria-fina--p2": {
+    "process": "contestás uno por uno qué productos tenés y a cuánto",
+    "pain": "perdés tiempo sin un catálogo online",
+    "value": "Que el cliente vea productos y precios y compre solo"
+  },
+  "chocolateria-y-reposteria-fina--p3": {
+    "process": "no actualizás el costo con el precio actual del chocolate",
+    "pain": "no sabés cuánto te cuesta cada bombón o torta",
+    "value": "Saber el costo real de cada producto"
+  },
+  "chocolateria-y-reposteria-fina--p4": {
+    "process": "perseguís el cobro de los encargos de temporada",
+    "pain": "se te mezcla quién pagó la seña y quién no",
+    "value": "Saber al instante quién pagó la seña y quién debe"
+  },
+  "reposteria-fina-y-tortas-para-bodas-y-eventos--p1": {
+    "process": "los pedidos de torta de boda te llegan por audio o mensaje suelto",
+    "pain": "se te mezclan diseño y porciones",
+    "value": "Recibir cada pedido con diseño y porciones exactas"
+  },
+  "reposteria-fina-y-tortas-para-bodas-y-eventos--p2": {
+    "process": "perseguís seña y saldo de cada torta",
+    "pain": "se te mezcla quién pagó antes de la fecha",
+    "value": "Saber quién está al día antes de cada evento"
+  },
+  "reposteria-fina-y-tortas-para-bodas-y-eventos--p3": {
+    "process": "no actualizás el costo con el precio actual de los insumos",
+    "pain": "no sabés cuánto te cuesta cada torta",
+    "value": "Saber el costo real de cada torta"
+  },
+  "reposteria-fina-y-tortas-para-bodas-y-eventos--p4": {
+    "process": "no guardás el contacto de organizadores y salones",
+    "pain": "no sabés cuándo volver a ofrecerles algo",
+    "value": "Volver a venderles a organizadores y salones en el momento justo"
+  },
+  "dark-kitchen-o-cocina-fantasma--p1": {
+    "process": "te entran pedidos por WhatsApp y por las apps a la vez",
+    "pain": "en hora pico mandás mal un plato o te olvidás uno",
+    "value": "Que los pedidos lleguen ordenados a la cocina"
+  },
+  "dark-kitchen-o-cocina-fantasma--p2": {
+    "process": "no sabés cuánto insumo te queda",
+    "pain": "te falta algo en medio de un pedido y tenés que cancelar",
+    "value": "No quedarte sin insumos en medio de un turno"
+  },
+  "dark-kitchen-o-cocina-fantasma--p3": {
+    "process": "cobrás por apps, transferencias y efectivo",
+    "pain": "perdés el hilo de quién pagó y quién debe",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "dark-kitchen-o-cocina-fantasma--p4": {
+    "process": "las apps de delivery se llevan comisión",
+    "pain": "no sabés si algunos platos te dejan ganancia",
+    "value": "Saber cuánto ganás realmente con cada plato"
+  },
+  "restaurante-virtual-multi-marca-ghost-kitchen--p1": {
+    "process": "manejás varias marcas desde la misma cocina",
+    "pain": "los pedidos te entran mezclados entre marcas",
+    "value": "Recibir los pedidos ordenados por marca"
+  },
+  "restaurante-virtual-multi-marca-ghost-kitchen--p2": {
+    "process": "cada marca cobra por separado",
+    "pain": "perdés tiempo cruzando quién pagó qué",
+    "value": "Ver los cobros de todas tus marcas en un solo lugar"
+  },
+  "restaurante-virtual-multi-marca-ghost-kitchen--p3": {
+    "process": "varias marcas usan los mismos insumos",
+    "pain": "no sabés cuánto te queda hasta que te falta",
+    "value": "Saber el stock real de los insumos compartidos"
+  },
+  "restaurante-virtual-multi-marca-ghost-kitchen--p4": {
+    "process": "armás el contenido de cada marca por separado",
+    "pain": "publicás poco o tarde",
+    "value": "Que las redes de cada marca se publiquen solas"
+  },
+  "food-truck--p1": {
+    "process": "cambiás de ubicación todos los días",
+    "pain": "el cliente no ve tu menú ni puede pedir antes y se va a otro lado",
+    "value": "Que el cliente vea tu menú y pida antes de llegar"
+  },
+  "food-truck--p2": {
+    "process": "cobrás en el momento con la fila esperando",
+    "pain": "se te complica el registro de los pedidos de eventos",
+    "value": "Saber al instante quién pagó los pedidos de eventos"
+  },
+  "food-truck--p3": {
+    "process": "los pedidos de eventos te llegan por audios y mensajes sueltos",
+    "pain": "se te pierden y armás mal un pedido grande",
+    "value": "Recibir los pedidos de eventos ordenados y completos"
+  },
+  "food-truck--p4": {
+    "process": "no tenés tiempo de avisar en redes dónde vas a estar",
+    "pain": "la gente no te encuentra",
+    "value": "Que tus redes avisen solas dónde estás hoy"
+  },
+  "carrito-de-comida-y-puesto-ambulante--p1": {
+    "process": "el cliente no sabe qué vendés hasta que llega al puesto",
+    "pain": "perdés a los que podrían encargarte antes",
+    "value": "Que la gente vea qué vendés antes de acercarse"
+  },
+  "carrito-de-comida-y-puesto-ambulante--p2": {
+    "process": "cobrás todo en efectivo",
+    "pain": "no sabés cuánto vendiste ni quién te debe un fiado",
+    "value": "Saber cuánto vendiste y quién te debe"
+  },
+  "carrito-de-comida-y-puesto-ambulante--p3": {
+    "process": "casi no publicás en redes",
+    "pain": "el que busca comida cerca no te encuentra",
+    "value": "Aparecer en redes sin subir algo todos los días"
+  },
+  "catering-corporativo-y-viandas--p1": {
+    "process": "armás los presupuestos a mano en Word o Excel",
+    "pain": "perdés horas y quedan sin respuesta en un mail",
+    "value": "Presupuestos en minutos que la empresa aprueba online"
+  },
+  "catering-corporativo-y-viandas--p2": {
+    "process": "cada oficina te manda el pedido por un canal distinto",
+    "pain": "te cuesta juntar todo antes de cocinar",
+    "value": "Recibir los pedidos de todas las oficinas ordenados"
+  },
+  "catering-corporativo-y-viandas--p3": {
+    "process": "el menú cambia cada semana",
+    "pain": "no sabés si el precio por vianda te sigue dejando margen",
+    "value": "Saber el costo real de cada vianda"
+  },
+  "catering-corporativo-y-viandas--p4": {
+    "process": "facturás a empresas a 30 o 60 días",
+    "pain": "perdés el registro de quién te pagó",
+    "value": "Saber al instante qué empresa pagó y cuál debe"
+  },
+  "catering-para-eventos-y-bodas--p1": {
+    "process": "armás a mano cada presupuesto según invitados y menú",
+    "pain": "te lleva horas entre evento y evento",
+    "value": "Presupuestos en minutos que el cliente aprueba online"
+  },
+  "catering-para-eventos-y-bodas--p2": {
+    "process": "cerrás los trabajos de palabra o por WhatsApp",
+    "pain": "si el cliente cambia de idea no tenés nada firmado",
+    "value": "Tener cada evento respaldado con un contrato firmado"
+  },
+  "catering-para-eventos-y-bodas--p3": {
+    "process": "cobrás seña y saldo en fechas distintas",
+    "pain": "se te complica saber quién pagó antes del evento",
+    "value": "Saber quién pagó seña y saldo antes de cada evento"
+  },
+  "catering-para-eventos-y-bodas--p4": {
+    "process": "las bodas se organizan con meses de anticipación",
+    "pain": "te olvidás del seguimiento y el cliente elige a otro",
+    "value": "Hacer seguimiento a cada cliente hasta que cierre"
+  },
+  "escuela-de-idiomas--p1": {
+    "process": "el material de cada nivel está en PDFs, grupos y grabaciones sueltas",
+    "pain": "armar un curso ordenado te cuesta muchísimo",
+    "value": "Tener cada nivel ordenado para que el alumno avance solo"
+  },
+  "escuela-de-idiomas--p2": {
+    "process": "no llevás asistencia y progreso de cada alumno en un solo lugar",
+    "pain": "armás los reportes para los padres a mano",
+    "value": "Mostrar el progreso de cada alumno sin armar reportes"
+  },
+  "escuela-de-idiomas--p3": {
+    "process": "perseguís uno por uno a los que se atrasan con la cuota",
+    "pain": "no sabés bien quién está al día",
+    "value": "Cobrar la cuota todos los meses sin perseguir a nadie"
+  },
+  "escuela-de-idiomas--p4": {
+    "process": "mezclás inscripciones, cuotas y pagos sueltos",
+    "pain": "cobrás de más o de menos",
+    "value": "Saber al instante quién pagó cada mes"
+  },
+  "profesor-de-idiomas-particular--p1": {
+    "process": "coordinás los horarios por WhatsApp uno por uno",
+    "pain": "se te superponen dos alumnos",
+    "value": "Que no se pisen las clases"
+  },
+  "profesor-de-idiomas-particular--p2": {
+    "process": "cobrás clase por clase por transferencia",
+    "pain": "perdés la cuenta de quién pagó y quién debe",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "profesor-de-idiomas-particular--p3": {
+    "process": "repetís la misma explicación en cada clase",
+    "pain": "no tenés dónde dejarla para que repasen solos",
+    "value": "Que los alumnos repasen solos con tu material"
+  },
+  "profesor-de-idiomas-particular--p4": {
+    "process": "no anotás en qué unidad va cada alumno",
+    "pain": "te cuesta contestar cómo viene",
+    "value": "Saber en qué unidad va cada alumno"
+  },
+  "academia-de-musica-e-instrumentos--p1": {
+    "process": "varios profesores comparten las mismas salas",
+    "pain": "se te pisan dos alumnos en la misma sala y hora",
+    "value": "Que no se pisen clases ni salas"
+  },
+  "academia-de-musica-e-instrumentos--p2": {
+    "process": "el progreso de cada alumno queda en el cuaderno del profesor",
+    "pain": "cuando un padre pregunta hay que salir a buscarlo",
+    "value": "Mostrar el progreso de cada alumno al instante"
+  },
+  "academia-de-musica-e-instrumentos--p3": {
+    "process": "varios profesores cobran clases sueltas y mensualidades",
+    "pain": "perdés el control de quién pagó",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "academia-de-musica-e-instrumentos--p4": {
+    "process": "cada profesor maneja su agenda por separado",
+    "pain": "nadie sabe quién está libre para cubrir o sumar alumnos",
+    "value": "Que todos los profesores vean la misma agenda"
+  },
+  "profesor-de-musica-particular--p1": {
+    "process": "coordinás cada clase por WhatsApp",
+    "pain": "se te pisan dos alumnos en el mismo horario",
+    "value": "Que no se pisen las clases"
+  },
+  "profesor-de-musica-particular--p2": {
+    "process": "cobrás por clase o mes por transferencia",
+    "pain": "perdés la cuenta de quién pagó y quién debe",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "profesor-de-musica-particular--p3": {
+    "process": "no anotás en qué tema o pieza va cada alumno",
+    "pain": "te cuesta contestarle al padre cómo viene",
+    "value": "Saber en qué va cada alumno"
+  },
+  "profesor-de-musica-particular--p4": {
+    "process": "mandás los recordatorios a mano y a veces te olvidás",
+    "pain": "el alumno falta y perdés ese horario",
+    "value": "Que los alumnos no falten sin avisar"
+  },
+  "academia-de-baile-y-danza--p1": {
+    "process": "perseguís uno por uno a los que se atrasan con la cuota",
+    "pain": "no sabés quién está al día para entrar a clase",
+    "value": "Cobrar la cuota todos los meses sin perseguir a nadie"
+  },
+  "academia-de-baile-y-danza--p2": {
+    "process": "tenés varias clases y niveles en el mismo salón",
+    "pain": "se te superponen alumnos en el mismo horario",
+    "value": "Que no se pisen clases ni cupos"
+  },
+  "academia-de-baile-y-danza--p3": {
+    "process": "no llevás asistencia ni nivel de cada alumno",
+    "pain": "armar los pases de nivel es un lío",
+    "value": "Tener asistencia y nivel de cada alumno a mano"
+  },
+  "academia-de-baile-y-danza--p4": {
+    "process": "mezclás cuotas, clases sueltas y cursos especiales",
+    "pain": "cobrás de más o de menos",
+    "value": "Saber al instante quién pagó qué"
+  },
+  "instructor-de-danza-independiente--p1": {
+    "process": "coordinás tus clases por WhatsApp uno por uno",
+    "pain": "se te pisan dos alumnos en el mismo horario",
+    "value": "Que no se pisen las clases"
+  },
+  "instructor-de-danza-independiente--p2": {
+    "process": "cobrás clase por clase por transferencia",
+    "pain": "perdés la cuenta de quién pagó y quién debe",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "instructor-de-danza-independiente--p3": {
+    "process": "no anotás en qué nivel o coreografía va cada alumno",
+    "pain": "te cuesta planear la clase siguiente",
+    "value": "Saber en qué va cada alumno"
+  },
+  "instructor-de-danza-independiente--p4": {
+    "process": "no seguís a los alumnos que dejan de venir",
+    "pain": "se te van sin que te des cuenta",
+    "value": "Recuperar a los alumnos que dejaron de venir"
+  },
+  "taller-de-artes-plasticas-y-dibujo--p1": {
+    "process": "perseguís uno por uno a los que se atrasan con la cuota",
+    "pain": "no sabés bien quién está al día",
+    "value": "Cobrar la cuota todos los meses sin perseguir a nadie"
+  },
+  "taller-de-artes-plasticas-y-dibujo--p2": {
+    "process": "tenés ejercicios y referencias en fotos y carpetas sueltas",
+    "pain": "los alumnos no tienen dónde repasar la técnica",
+    "value": "Que los alumnos repasen solos lo visto en el taller"
+  },
+  "taller-de-artes-plasticas-y-dibujo--p3": {
+    "process": "mezclás cuotas, materiales y cursos especiales",
+    "pain": "cobrás de más o de menos",
+    "value": "Saber al instante quién pagó qué"
+  },
+  "taller-de-artes-plasticas-y-dibujo--p4": {
+    "process": "no llevás asistencia ni avance de cada alumno",
+    "pain": "te cuesta contestarle al padre cómo viene",
+    "value": "Mostrar el avance de cada alumno al instante"
+  },
+  "clases-de-dibujo-y-pintura-online--p1": {
+    "process": "tenés las clases grabadas entre Drive, YouTube y PDFs",
+    "pain": "el alumno no tiene un lugar donde pagar y avanzar ordenado",
+    "value": "Tener tus clases en un lugar propio donde el alumno paga y avanza"
+  },
+  "clases-de-dibujo-y-pintura-online--p2": {
+    "process": "perseguís los pagos mensuales a mano",
+    "pain": "no sabés a quién cortarle el acceso",
+    "value": "Cobrar todos los meses y cortar el acceso solo"
+  },
+  "clases-de-dibujo-y-pintura-online--p3": {
+    "process": "cobrás por Mercado Pago o transferencias sueltas",
+    "pain": "perdés el registro de quién pagó qué",
+    "value": "Saber al instante quién pagó cada curso o mes"
+  },
+  "clases-de-dibujo-y-pintura-online--p4": {
+    "process": "no ves quién avanza y quién abandona el curso",
+    "pain": "no podés ayudarlo a tiempo",
+    "value": "Ver quién avanza y quién se frenó"
+  },
+  "escuela-de-formacion-en-oficios--p1": {
+    "process": "el material queda repartido entre grupos de WhatsApp y carpetas",
+    "pain": "el alumno no encuentra qué practicar en casa",
+    "value": "Que cada alumno tenga su material ordenado por módulo"
+  },
+  "escuela-de-formacion-en-oficios--p2": {
+    "process": "armás a mano los reportes de avance de cada alumno",
+    "pain": "perdés tiempo cada vez que te los piden",
+    "value": "Mostrar el avance de cada alumno al instante"
+  },
+  "escuela-de-formacion-en-oficios--p3": {
+    "process": "cobrás la cuota a mano",
+    "pain": "no cortás el acceso a tiempo y perdés plata",
+    "value": "Cobrar la cuota todos los meses y cortar el acceso solo"
+  },
+  "escuela-de-formacion-en-oficios--p4": {
+    "process": "corrés atrás de matrícula y cuotas por transferencia",
+    "pain": "no sabés bien quién pagó",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "bootcamp-de-formacion-tecnica-intensiva--p1": {
+    "process": "el material de cada cohorte está en Drive o Notion armado a las apuradas",
+    "pain": "se te mezcla el contenido entre camadas",
+    "value": "Que cada cohorte vea solo su contenido ordenado"
+  },
+  "bootcamp-de-formacion-tecnica-intensiva--p2": {
+    "process": "armás planillas sueltas para mostrar el progreso de cada alumno",
+    "pain": "perdés tiempo en cada consulta",
+    "value": "Mostrar el progreso de cada alumno módulo por módulo"
+  },
+  "bootcamp-de-formacion-tecnica-intensiva--p3": {
+    "process": "cobrás las cuotas por transferencia",
+    "pain": "no sabés quién va al día antes de la próxima cohorte",
+    "value": "Saber al instante quién pagó cada cuota"
+  },
+  "bootcamp-de-formacion-tecnica-intensiva--p4": {
+    "process": "das de baja a mano a los que no pagan",
+    "pain": "se te complica cortarles el acceso",
+    "value": "Que el acceso se corte solo al que no paga"
+  },
+  "coach-de-vida-o-desarrollo-personal--p1": {
+    "process": "coordinás cada sesión por WhatsApp mensaje a mensaje",
+    "pain": "se te pisan dos clientes en el mismo horario",
+    "value": "Que no se pisen las sesiones"
+  },
+  "coach-de-vida-o-desarrollo-personal--p2": {
+    "process": "no anotás en qué proceso está cada cliente",
+    "pain": "volvés a preguntar lo mismo y se te olvida lo prometido",
+    "value": "Tener el proceso de cada cliente a mano"
+  },
+  "coach-de-vida-o-desarrollo-personal--p3": {
+    "process": "cobrás por transferencia",
+    "pain": "tenés que preguntar quién pagó antes de confirmar",
+    "value": "Saber quién pagó antes de confirmar la sesión"
+  },
+  "coach-de-vida-o-desarrollo-personal--p4": {
+    "process": "los clientes te escriben para saber su próxima sesión o si pagaron",
+    "pain": "perdés tiempo contestando lo mismo",
+    "value": "Que cada cliente vea solo su próxima sesión y pagos"
+  },
+  "mentor-o-consultor-de-carrera--p1": {
+    "process": "agendás las mentorías a mano por LinkedIn o mail",
+    "pain": "se te pisan dos consultas",
+    "value": "Que no se pisen las sesiones"
+  },
+  "mentor-o-consultor-de-carrera--p2": {
+    "process": "el material del programa está en links sueltos",
+    "pain": "el cliente no sabe dónde encontrarlo",
+    "value": "Tener todo el material del programa en un solo lugar"
+  },
+  "mentor-o-consultor-de-carrera--p3": {
+    "process": "cobrás por transferencia",
+    "pain": "perdés tiempo confirmando quién pagó",
+    "value": "Saber al instante quién pagó"
+  },
+  "mentor-o-consultor-de-carrera--p4": {
+    "process": "cobrás el acompañamiento mes a mes a mano",
+    "pain": "se te complica saber a quién cortarle el acceso",
+    "value": "Cobrar todos los meses y cortar el acceso solo"
+  },
+  "tutor-o-profesor-particular-escolar--p1": {
+    "process": "coordinás las clases con cada familia por WhatsApp",
+    "pain": "se te pisan dos alumnos en el mismo horario",
+    "value": "Que no se pisen las clases"
+  },
+  "tutor-o-profesor-particular-escolar--p2": {
+    "process": "cobrás por transferencia y llevás la cuenta de memoria",
+    "pain": "no sabés bien quién te debe",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "tutor-o-profesor-particular-escolar--p3": {
+    "process": "los padres te preguntan seguido cómo viene su hijo",
+    "pain": "armás un resumen a mano cada vez",
+    "value": "Mostrar el progreso de cada alumno sin armar resúmenes"
+  },
+  "tutor-o-profesor-particular-escolar--p4": {
+    "process": "avisás a mano reprogramaciones y pagos por vencer",
+    "pain": "a veces te olvidás y tenés roces con los padres",
+    "value": "Que los avisos a los padres salgan solos"
+  },
+  "plataforma-de-tutorias-escolares-online--p1": {
+    "process": "el contenido está repartido entre tutores y plataformas sueltas",
+    "pain": "el alumno no ve todo lo suyo en un lugar",
+    "value": "Que cada alumno tenga todo su contenido en un solo lugar"
+  },
+  "plataforma-de-tutorias-escolares-online--p2": {
+    "process": "coordinás a mano las clases de varios tutores y alumnos",
+    "pain": "se te pisan los horarios",
+    "value": "Que no se pisen las clases entre tutores"
+  },
+  "plataforma-de-tutorias-escolares-online--p3": {
+    "process": "muchos alumnos pagan por separado",
+    "pain": "no sabés bien quién pagó cada clase o mes",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "plataforma-de-tutorias-escolares-online--p4": {
+    "process": "armás a mano el reporte de cada alumno con varios tutores",
+    "pain": "perdés tiempo cada vez que un padre pregunta",
+    "value": "Mostrar el progreso de cada alumno por materia"
+  },
+  "academia-de-preparacion-para-examenes--p1": {
+    "process": "el material y los simulacros están en PDFs y grupos sueltos",
+    "pain": "el aspirante no encuentra qué practicar",
+    "value": "Tener clases y simulacros ordenados en un solo lugar"
+  },
+  "academia-de-preparacion-para-examenes--p2": {
+    "process": "armás a mano las planillas de resultados de simulacros",
+    "pain": "no podés mostrar el avance rápido",
+    "value": "Mostrar el avance de cada aspirante al instante"
+  },
+  "academia-de-preparacion-para-examenes--p3": {
+    "process": "cobrás el acceso mes a mes a mano",
+    "pain": "se te escapa quién está al día",
+    "value": "Cobrar todos los meses y cortar el acceso solo"
+  },
+  "academia-de-preparacion-para-examenes--p4": {
+    "process": "corrés atrás de inscripción y cuotas por transferencia",
+    "pain": "no sabés bien quién pagó",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "tutor-particular-para-ingreso-universitario--p1": {
+    "process": "en temporada alta te escriben varios aspirantes a la vez",
+    "pain": "se te pisan dos clases a la misma hora",
+    "value": "Que no se pisen las clases en temporada alta"
+  },
+  "tutor-particular-para-ingreso-universitario--p2": {
+    "process": "no anotás en qué tema quedó cada aspirante",
+    "pain": "repasás lo mismo por las dudas",
+    "value": "Saber en qué tema va cada aspirante"
+  },
+  "tutor-particular-para-ingreso-universitario--p3": {
+    "process": "cobrás por transferencia entre tantos mensajes",
+    "pain": "perdés el registro de quién pagó",
+    "value": "Saber al instante quién pagó cada clase"
+  },
+  "tutor-particular-para-ingreso-universitario--p4": {
+    "process": "mandás el material de repaso por WhatsApp",
+    "pain": "el aspirante lo pierde entre los mensajes",
+    "value": "Tener el material de repaso ordenado en un solo lugar"
+  },
+  "creador-de-cursos-online--p1": {
+    "process": "tenés el curso repartido entre Drive, Telegram y videos sueltos",
+    "pain": "el alumno no sabe por dónde arrancar",
+    "value": "Tener tu curso en un lugar propio donde el alumno paga y avanza"
+  },
+  "creador-de-cursos-online--p2": {
+    "process": "cortás el acceso a mano a quien deja de pagar",
+    "pain": "se te complica controlar quién sigue",
+    "value": "Que el acceso se corte solo al que no paga"
+  },
+  "creador-de-cursos-online--p3": {
+    "process": "cobrás por transferencia o pasarelas sueltas",
+    "pain": "no ves en un lugar quién pagó y quién no",
+    "value": "Ver todos los pagos en un solo lugar"
+  },
+  "creador-de-cursos-online--p4": {
+    "process": "los números están entre la pasarela y una planilla",
+    "pain": "no sabés cuánto vendés ni qué curso funciona",
+    "value": "Ver ventas y cursos que más venden en tiempo real"
+  },
+  "comunidad-o-club-de-suscriptores-pago--p1": {
+    "process": "controlás a mano quién pagó la cuota",
+    "pain": "no sabés a quién sacarle el acceso",
+    "value": "Cobrar la cuota y cortar el acceso solo"
+  },
+  "comunidad-o-club-de-suscriptores-pago--p2": {
+    "process": "cobrás la membresía por medios sueltos",
+    "pain": "perdés el registro de quién pagó este mes",
+    "value": "Saber al instante quién pagó este mes"
+  },
+  "comunidad-o-club-de-suscriptores-pago--p3": {
+    "process": "el contenido exclusivo está en posteos viejos y archivos sueltos",
+    "pain": "el miembro nuevo no encuentra nada",
+    "value": "Tener el contenido exclusivo ordenado en un solo lugar"
+  },
+  "comunidad-o-club-de-suscriptores-pago--p4": {
+    "process": "las consultas te llegan por DMs, mails y comentarios",
+    "pain": "se te pierden reclamos sin responder",
+    "value": "Que ninguna consulta quede sin responder"
+  },
+  "estudio-juridico-chico--p1": {
+    "process": "cada abogado lleva sus causas en su cuaderno o Excel",
+    "pain": "nadie tiene a mano el estado de un caso",
+    "value": "Ver el estado de cada causa en un solo lugar"
+  },
+  "estudio-juridico-chico--p2": {
+    "process": "cada abogado maneja su propia agenda",
+    "pain": "se pisan audiencias o reuniones",
+    "value": "Que todo el estudio vea la misma agenda"
+  },
+  "estudio-juridico-chico--p3": {
+    "process": "redactás cada contrato desde cero y firmás en papel",
+    "pain": "perdés horas yendo y viniendo con el cliente",
+    "value": "Contratos en minutos firmados online"
+  },
+  "estudio-juridico-chico--p4": {
+    "process": "mandás el presupuesto de honorarios por mail o WhatsApp",
+    "pain": "se pierde y no sabés si lo aprobó",
+    "value": "Presupuestos que el cliente aprueba online"
+  },
+  "abogado-independiente--p1": {
+    "process": "llevás las causas y los clientes en la cabeza o un cuaderno",
+    "pain": "cuando un cliente vuelve no te acordás en qué quedó",
+    "value": "Tener cada cliente y causa a mano"
+  },
+  "abogado-independiente--p2": {
+    "process": "cobrás los honorarios por transferencia",
+    "pain": "perdés tiempo buscando comprobantes",
+    "value": "Saber al instante quién pagó"
+  },
+  "abogado-independiente--p3": {
+    "process": "redactás cada contrato o poder desde cero y firmás en papel",
+    "pain": "perdés horas yendo y viniendo con el cliente",
+    "value": "Contratos en minutos firmados online"
+  },
+  "abogado-independiente--p4": {
+    "process": "vos y quien te cubre anotan las citas por separado",
+    "pain": "se pisan las citas",
+    "value": "Compartir la agenda sin que se pisen las citas"
+  },
+  "escribania-o-notaria--p1": {
+    "process": "las derivaciones de inmobiliarias y bancos no quedan registradas",
+    "pain": "perdés el seguimiento de cada trámite",
+    "value": "Ver en qué trámite está cada derivación"
+  },
+  "escribania-o-notaria--p2": {
+    "process": "armás cada escritura o poder desde cero y firmás en papel",
+    "pain": "perdés tiempo juntando firmas",
+    "value": "Escrituras y poderes en minutos firmados online"
+  },
+  "escribania-o-notaria--p3": {
+    "process": "cada uno del equipo maneja su agenda por separado",
+    "pain": "se pisan firmas o audiencias",
+    "value": "Que todo el equipo vea la misma agenda"
+  },
+  "escribania-o-notaria--p4": {
+    "process": "cobrás honorarios y gastos por transferencia",
+    "pain": "perdés el registro de quién pagó qué",
+    "value": "Saber al instante quién pagó qué parte"
+  },
+  "administrador-de-consorcio--p1": {
+    "process": "cobrás las expensas por transferencia",
+    "pain": "revisás movimiento por movimiento quién pagó",
+    "value": "Saber al instante qué depto pagó y cuál está atrasado"
+  },
+  "administrador-de-consorcio--p2": {
+    "process": "los propietarios te preguntan por WhatsApp el estado de sus expensas",
+    "pain": "te comés el día contestando",
+    "value": "Que cada propietario vea solo sus expensas y comprobantes"
+  },
+  "administrador-de-consorcio--p3": {
+    "process": "emitís los comprobantes de expensas a mano cada mes",
+    "pain": "cargás los mismos datos una y otra vez",
+    "value": "Emitir los comprobantes sin cargar todo a mano"
+  },
+  "administrador-de-consorcio--p4": {
+    "process": "armás la rendición de cuentas rearmando planillas",
+    "pain": "te lleva horas",
+    "value": "Rendiciones y balances que salen solos"
+  },
+  "administradora-de-propiedades-y-alquileres--p1": {
+    "process": "cobrás los alquileres por transferencia",
+    "pain": "revisás uno por uno quién pagó",
+    "value": "Saber al instante quién pagó el alquiler"
+  },
+  "administradora-de-propiedades-y-alquileres--p2": {
+    "process": "inquilinos y propietarios te preguntan por WhatsApp por pagos y comprobantes",
+    "pain": "te comés el día contestando",
+    "value": "Que cada uno vea solo sus pagos y documentos"
+  },
+  "administradora-de-propiedades-y-alquileres--p3": {
+    "process": "tenés propiedades, inquilinos y propietarios sin un lugar único",
+    "pain": "se te pierde quién necesita qué",
+    "value": "Tener cada propiedad e inquilino en un solo lugar"
+  },
+  "administradora-de-propiedades-y-alquileres--p4": {
+    "process": "armás cada contrato desde cero y firmás en papel",
+    "pain": "perdés tiempo juntando firmas",
+    "value": "Contratos de alquiler en minutos firmados online"
+  },
+  "estudio-contable--p1": {
+    "process": "cruzás a mano el resumen bancario con los movimientos",
+    "pain": "perdés horas y a veces el balance no cierra",
+    "value": "Que las diferencias bancarias se marquen solas"
+  },
+  "estudio-contable--p2": {
+    "process": "rearmás cada mes libros y reportes copiando de varios Excel",
+    "pain": "perdés horas por cliente",
+    "value": "Libros y reportes que salen armados"
+  },
+  "estudio-contable--p3": {
+    "process": "facturás con plantillas sueltas",
+    "pain": "terminás con numeración salteada o repetida",
+    "value": "Facturar ordenado y sin errores de numeración"
+  },
+  "estudio-contable--p4": {
+    "process": "los clientes te preguntan si presentaste tal declaración",
+    "pain": "perdés horas contestando lo mismo",
+    "value": "Que cada cliente vea solo el estado de sus declaraciones"
+  },
+  "asesor-impositivo-y-liquidador-afip--p1": {
+    "process": "los datos de cada cliente están entre WhatsApp, Excel y tu cabeza",
+    "pain": "se te escapa qué presentar antes de cada vencimiento",
+    "value": "Tener cada cliente y sus vencimientos a mano"
+  },
+  "asesor-impositivo-y-liquidador-afip--p2": {
+    "process": "armás las liquidaciones de cada cliente a mano",
+    "pain": "te come el tiempo en plena época de vencimientos",
+    "value": "Liquidaciones y reportes que salen armados"
+  },
+  "asesor-impositivo-y-liquidador-afip--p3": {
+    "process": "los clientes te llaman en pleno vencimiento para preguntar",
+    "pain": "perdés tiempo cuando menos tenés",
+    "value": "Que cada cliente vea solo el estado de sus presentaciones"
+  },
+  "asesor-impositivo-y-liquidador-afip--p4": {
+    "process": "perseguís tus honorarios por WhatsApp",
+    "pain": "mes a mes te deben",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "corredor-o-productor-de-seguros--p1": {
+    "process": "manejás decenas de pólizas sin un registro único",
+    "pain": "se te pasan vencimientos y renovaciones",
+    "value": "Saber a quién le vence la póliza y cuándo llamarlo"
+  },
+  "corredor-o-productor-de-seguros--p2": {
+    "process": "mandás pólizas y anexos en PDF por WhatsApp",
+    "pain": "no sabés si el cliente los firmó",
+    "value": "Pólizas firmadas online y guardadas"
+  },
+  "corredor-o-productor-de-seguros--p3": {
+    "process": "avisás los vencimientos a mano",
+    "pain": "el cliente se queda sin cobertura sin enterarse",
+    "value": "Que los avisos de vencimiento salgan solos"
+  },
+  "corredor-o-productor-de-seguros--p4": {
+    "process": "perseguís cuota por cuota a los atrasados",
+    "pain": "te enterás tarde de que dejaron de pagar",
+    "value": "Saber al instante quién se atrasó con la póliza"
+  },
+  "consultora-de-rrhh-y-seleccion--p1": {
+    "process": "seguís decenas de empresas a la vez sin un registro único",
+    "pain": "se te pierde en qué etapa quedó cada búsqueda",
+    "value": "Ver en qué etapa está cada búsqueda"
+  },
+  "consultora-de-rrhh-y-seleccion--p2": {
+    "process": "liquidás sueldos de clientes a mano en Excel",
+    "pain": "un error te puede costar la cuenta",
+    "value": "Liquidar sueldos sin errores"
+  },
+  "consultora-de-rrhh-y-seleccion--p3": {
+    "process": "tenés entrevistas y tests de candidatos en carpetas sueltas",
+    "pain": "te cuesta comparar postulantes",
+    "value": "Comparar candidatos de un mismo proceso fácil"
+  },
+  "consultora-de-rrhh-y-seleccion--p4": {
+    "process": "mandás los contratos de servicio en PDF por mail",
+    "pain": "no queda claro quién firmó qué",
+    "value": "Contratos de servicio firmados online"
+  },
+  "headhunter-y-reclutador-independiente--p1": {
+    "process": "manejás varias búsquedas a la vez sin un registro único",
+    "pain": "se te mezcla qué candidato mandaste a cada cliente",
+    "value": "Ver en qué quedó cada búsqueda y candidato"
+  },
+  "headhunter-y-reclutador-independiente--p2": {
+    "process": "los perfiles evaluados quedan en carpetas sueltas",
+    "pain": "rearmás todo cuando el cliente pregunta",
+    "value": "Mostrar el estado de cada búsqueda al instante"
+  },
+  "headhunter-y-reclutador-independiente--p3": {
+    "process": "mandás el acuerdo de honorarios por mail",
+    "pain": "cobrás tarde porque no se firmó a tiempo",
+    "value": "Acuerdos de honorarios firmados online"
+  },
+  "headhunter-y-reclutador-independiente--p4": {
+    "process": "mandás recordatorios de pago a mano",
+    "pain": "esperás semanas a que te paguen",
+    "value": "Saber al instante qué empresa pagó tu fee"
+  },
+  "agencia-de-viajes--p1": {
+    "process": "cada vendedor anota sus clientes en su cuaderno o Excel",
+    "pain": "nadie sabe en qué quedó una cotización",
+    "value": "Ver en qué quedó cada cotización"
+  },
+  "agencia-de-viajes--p2": {
+    "process": "armás las cotizaciones a mano y las mandás por WhatsApp",
+    "pain": "se pierden en el chat antes de que el cliente decida",
+    "value": "Cotizaciones en minutos que el cliente aprueba online"
+  },
+  "agencia-de-viajes--p3": {
+    "process": "firmás los contratos en papel o por mail",
+    "pain": "armar la documentación te lleva horas",
+    "value": "Contratos de viaje firmados online"
+  },
+  "agencia-de-viajes--p4": {
+    "process": "corrés atrás de señas y cuotas por WhatsApp",
+    "pain": "no sabés bien quién pagó qué",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "agencia-de-viajes-corporativos--p1": {
+    "process": "manejás cuentas con varios viajeros y aprobadores",
+    "pain": "se te mezcla quién autorizó cada viaje",
+    "value": "Ver quién viaja y quién aprueba en cada empresa"
+  },
+  "agencia-de-viajes-corporativos--p2": {
+    "process": "facturás a 30 o 60 días sin un tablero de cobros",
+    "pain": "perseguís el pago de cada empresa",
+    "value": "Saber al instante qué empresa pagó y cuál debe"
+  },
+  "agencia-de-viajes-corporativos--p3": {
+    "process": "cargás a mano los datos fiscales de cada empresa",
+    "pain": "perdés tiempo en cada factura",
+    "value": "Facturar con los datos de cada empresa ya cargados"
+  },
+  "agencia-de-viajes-corporativos--p4": {
+    "process": "compras de cada empresa te pide por mail el estado de sus viajes",
+    "pain": "contestar uno por uno te come el día",
+    "value": "Que cada empresa vea sola sus viajes y comprobantes"
+  },
+  "tour-operador-y-excursiones-locales--p1": {
+    "process": "vendés los cupos por WhatsApp",
+    "pain": "te pasás de gente o te quedan lugares vacíos",
+    "value": "No vender de más ni dejar cupos vacíos"
+  },
+  "tour-operador-y-excursiones-locales--p2": {
+    "process": "cobrás la seña por transferencia",
+    "pain": "preguntás quién pagó antes de confirmar",
+    "value": "Saber al instante quién confirmó con seña"
+  },
+  "tour-operador-y-excursiones-locales--p3": {
+    "process": "no guardás los datos de los turistas",
+    "pain": "no podés ofrecerles la próxima salida",
+    "value": "Volver a venderle a cada turista"
+  },
+  "tour-operador-y-excursiones-locales--p4": {
+    "process": "avisás a mano el punto de encuentro",
+    "pain": "alguien siempre llega tarde o se pierde la excursión",
+    "value": "Que los avisos del punto de encuentro salgan solos"
+  },
+  "barberia--p1": {
+    "process": "tomás turnos por WhatsApp",
+    "pain": "se te pisan dos clientes a la misma hora o te queda el sillón parado",
+    "value": "Que no se pisen los turnos ni quede el sillón parado"
+  },
+  "barberia--p2": {
+    "process": "no premiás al cliente que vuelve",
+    "pain": "no tiene motivo para no probar la barbería de la esquina",
+    "value": "Que los clientes vuelvan siempre con vos"
+  },
+  "barberia--p3": {
+    "process": "cobrás en efectivo o transferencia",
+    "pain": "no sabés quién pagó qué al cerrar la caja",
+    "value": "Saber al instante quién pagó cada corte"
+  },
+  "barberia--p4": {
+    "process": "no anotás qué corte le gusta a cada cliente ni hace cuánto no viene",
+    "pain": "perdés la chance de reengancharlo",
+    "value": "Tener un registro de cada cliente para reengancharlo"
+  },
+  "salon-de-belleza-y-peluqueria--p1": {
+    "process": "coordinás los turnos por WhatsApp",
+    "pain": "se te pisan dos clientas con la misma peluquera",
+    "value": "Que no se pisen los turnos"
+  },
+  "salon-de-belleza-y-peluqueria--p2": {
+    "process": "cada peluquera anota sus turnos por su lado",
+    "pain": "no ves quién tiene lugar y quién está saturada",
+    "value": "Que todo el equipo vea la misma agenda"
+  },
+  "salon-de-belleza-y-peluqueria--p3": {
+    "process": "no premiás a la clienta que vuelve",
+    "pain": "se va con cualquier promo nueva",
+    "value": "Que las clientas vuelvan"
+  },
+  "salon-de-belleza-y-peluqueria--p4": {
+    "process": "cobrás servicios distintos a cada clienta",
+    "pain": "cerrar la caja es perseguir quién pagó qué",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "nail-studio-y-manicura--p1": {
+    "process": "tomás los turnos vos misma por Instagram y WhatsApp",
+    "pain": "se te pisan dos clientas",
+    "value": "Que no se pisen los turnos"
+  },
+  "nail-studio-y-manicura--p2": {
+    "process": "cobrás la seña por transferencia",
+    "pain": "confirmás a mano quién pagó",
+    "value": "Saber al instante quién pagó la seña"
+  },
+  "nail-studio-y-manicura--p3": {
+    "process": "no premiás a la clienta que vuelve",
+    "pain": "prueba otra manicurista más barata",
+    "value": "Que las clientas vuelvan"
+  },
+  "nail-studio-y-manicura--p4": {
+    "process": "mandás los recordatorios a mano y a veces te olvidás",
+    "pain": "la clienta no viene",
+    "value": "Que las clientas no falten"
+  },
+  "centro-de-depilacion-laser--p1": {
+    "process": "coordinás las sesiones de cada clienta por WhatsApp",
+    "pain": "se te superponen los turnos",
+    "value": "Que no se pisen los turnos"
+  },
+  "centro-de-depilacion-laser--p2": {
+    "process": "cobrás los paquetes por transferencia",
+    "pain": "no sabés cuántas sesiones pagó cada clienta",
+    "value": "Saber cuántas sesiones pagó cada clienta"
+  },
+  "centro-de-depilacion-laser--p3": {
+    "process": "no anotás en qué sesión va cada clienta",
+    "pain": "se te pierde el seguimiento del tratamiento",
+    "value": "Saber en qué sesión va cada clienta y cuándo le toca"
+  },
+  "centro-de-depilacion-laser--p4": {
+    "process": "controlás a mano el saldo de sesiones prepagas",
+    "pain": "no sabés quién ya usó todas",
+    "value": "Que el saldo de sesiones se controle solo"
+  },
+  "maquilladora-artistica-y-social--p1": {
+    "process": "en temporada de bodas te piden por WhatsApp",
+    "pain": "se te pisan dos eventos el mismo horario",
+    "value": "Que no se pisen las fechas"
+  },
+  "maquilladora-artistica-y-social--p2": {
+    "process": "cobrás la seña por transferencia",
+    "pain": "confirmás a mano que llegó antes de bloquear la fecha",
+    "value": "Saber al instante quién reservó con seña"
+  },
+  "maquilladora-artistica-y-social--p3": {
+    "process": "armás los presupuestos a mano por WhatsApp",
+    "pain": "se pierden en el chat antes de que la novia decida",
+    "value": "Presupuestos en minutos que la novia aprueba online"
+  },
+  "maquilladora-artistica-y-social--p4": {
+    "process": "confirmás a mano la hora del maquillaje",
+    "pain": "llegás corriendo o ella no está lista",
+    "value": "Que la confirmación del horario salga sola"
+  },
+  "estudio-de-tatuajes-y-piercing--p1": {
+    "process": "agendás sesiones largas por Instagram",
+    "pain": "se te pisan citas cuando un diseño se alarga",
+    "value": "Que no se pisen las sesiones"
+  },
+  "estudio-de-tatuajes-y-piercing--p2": {
+    "process": "cotizás cada diseño a mano",
+    "pain": "el presupuesto se pierde en el chat",
+    "value": "Presupuestos en minutos que el cliente aprueba online"
+  },
+  "estudio-de-tatuajes-y-piercing--p3": {
+    "process": "cobrás la seña por transferencia",
+    "pain": "confirmás a mano quién pagó",
+    "value": "Saber al instante quién pagó la seña"
+  },
+  "estudio-de-tatuajes-y-piercing--p4": {
+    "process": "no anotás qué diseño le hiciste a cada cliente",
+    "pain": "te cuesta ofrecerle el próximo trabajo",
+    "value": "Tener un registro de cada cliente para volver a venderle"
+  },
+  "academia-de-artes-marciales-mma-jiu-jitsu--p1": {
+    "process": "controlás la cuota a mano",
+    "pain": "te enterás tarde de que deben meses",
+    "value": "Cobrar la cuota todos los meses sin perseguir a nadie"
+  },
+  "academia-de-artes-marciales-mma-jiu-jitsu--p2": {
+    "process": "no anotás el cinturón o nivel de cada alumno",
+    "pain": "armás a mano la respuesta para los padres",
+    "value": "Tener el nivel y progreso de cada alumno a mano"
+  },
+  "academia-de-artes-marciales-mma-jiu-jitsu--p3": {
+    "process": "cobrás por transferencia o efectivo",
+    "pain": "revisás a mano quién pagó",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "academia-de-artes-marciales-mma-jiu-jitsu--p4": {
+    "process": "los alumnos se anotan por WhatsApp",
+    "pain": "se te pisan dos en el mismo horario",
+    "value": "Que no se pisen los turnos"
+  },
+  "instructor-de-artes-marciales-independiente--p1": {
+    "process": "coordinás los entrenamientos por WhatsApp",
+    "pain": "se te pisan dos alumnos en el mismo turno",
+    "value": "Que no se pisen los turnos"
+  },
+  "instructor-de-artes-marciales-independiente--p2": {
+    "process": "cobrás por transferencia y llevás la cuenta de memoria",
+    "pain": "no sabés bien quién te debe",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "instructor-de-artes-marciales-independiente--p3": {
+    "process": "no anotás el progreso de cada alumno",
+    "pain": "tenés que hacer memoria cuando te preguntan",
+    "value": "Tener el progreso de cada alumno a mano"
+  },
+  "instructor-de-artes-marciales-independiente--p4": {
+    "process": "recordás a mano el vencimiento del abono",
+    "pain": "perseguís a cada alumno mes a mes",
+    "value": "Cobrar el abono todos los meses sin perseguir a nadie"
+  },
+  "club-o-academia-de-natacion--p1": {
+    "process": "controlás a mano la cuota de las familias",
+    "pain": "les seguís guardando lugar aunque deban",
+    "value": "Cobrar la cuota todos los meses sin perseguir a nadie"
+  },
+  "club-o-academia-de-natacion--p2": {
+    "process": "las reservas entran por WhatsApp",
+    "pain": "se te pisan dos alumnos en el mismo carril",
+    "value": "Que no se pisen carriles ni horarios"
+  },
+  "club-o-academia-de-natacion--p3": {
+    "process": "no anotás el nivel ni las clases de cada alumno",
+    "pain": "armás a mano la respuesta para los padres",
+    "value": "Tener el nivel y progreso de cada alumno a mano"
+  },
+  "club-o-academia-de-natacion--p4": {
+    "process": "cobrás cuotas y clases por transferencia",
+    "pain": "administración revisa a mano quién pagó",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "profesor-de-natacion-particular--p1": {
+    "process": "coordinás las clases con cada familia por WhatsApp",
+    "pain": "se te pisan dos alumnos",
+    "value": "Que no se pisen las clases"
+  },
+  "profesor-de-natacion-particular--p2": {
+    "process": "cobrás por transferencia y llevás la cuenta de memoria",
+    "pain": "no sabés bien qué familia te debe",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "profesor-de-natacion-particular--p3": {
+    "process": "no anotás el progreso de cada alumno",
+    "pain": "tenés que hacer memoria cuando el padre pregunta",
+    "value": "Tener el progreso de cada alumno a mano"
+  },
+  "profesor-de-natacion-particular--p4": {
+    "process": "avisás a mano clases y pagos vencidos",
+    "pain": "se te olvida y perdés el turno",
+    "value": "Que los avisos de clases y pagos salgan solos"
+  },
+  "estudio-de-yoga-y-meditacion--p1": {
+    "process": "controlás la membresía a mano",
+    "pain": "seguís dejando entrar a quien debe",
+    "value": "Cobrar la membresía todos los meses sin perseguir a nadie"
+  },
+  "estudio-de-yoga-y-meditacion--p2": {
+    "process": "las reservas entran por WhatsApp",
+    "pain": "se te pisan dos alumnos en el mismo horario",
+    "value": "Que no se pisen las clases"
+  },
+  "estudio-de-yoga-y-meditacion--p3": {
+    "process": "cobrás clases y membresías por transferencia",
+    "pain": "revisás a mano quién pagó",
+    "value": "Saber al instante quién está al día"
+  },
+  "estudio-de-yoga-y-meditacion--p4": {
+    "process": "tenés meditaciones grabadas sueltas en Drive o WhatsApp",
+    "pain": "no las podés cobrar",
+    "value": "Vender tus clases grabadas en un lugar propio"
+  },
+  "plataforma-de-yoga-y-meditacion-online--p1": {
+    "process": "tenés las clases entre YouTube, Drive y WhatsApp",
+    "pain": "no tenés un lugar propio donde cobrar el acceso",
+    "value": "Tener tus clases en un lugar propio y cobrar el acceso"
+  },
+  "plataforma-de-yoga-y-meditacion-online--p2": {
+    "process": "controlás la membresía a mano",
+    "pain": "seguís dando acceso a quien no paga",
+    "value": "Que el acceso se corte solo al que no paga"
+  },
+  "plataforma-de-yoga-y-meditacion-online--p3": {
+    "process": "cobrás accesos sueltos por transferencia",
+    "pain": "cruzás a mano quién pagó con quién mira",
+    "value": "Saber al instante quién está al día"
+  },
+  "plataforma-de-yoga-y-meditacion-online--p4": {
+    "process": "las reservas de clases en vivo entran por Instagram o mail",
+    "pain": "se te pisan dos personas en el mismo horario",
+    "value": "Que no se pisen las clases en vivo"
+  },
+  "estudio-de-pilates--p1": {
+    "process": "las reservas entran por WhatsApp",
+    "pain": "se te anotan más clientas que camas",
+    "value": "Que no se pisen los turnos de reformer"
+  },
+  "estudio-de-pilates--p2": {
+    "process": "controlás el abono a mano",
+    "pain": "seguís dejando entrar a quien debe",
+    "value": "Cobrar el abono todos los meses sin perseguir a nadie"
+  },
+  "estudio-de-pilates--p3": {
+    "process": "cobrás clases y abonos por transferencia",
+    "pain": "recepción revisa a mano quién pagó",
+    "value": "Saber al instante quién está al día"
+  },
+  "estudio-de-pilates--p4": {
+    "process": "cada instructora anota los turnos como puede",
+    "pain": "se pisan clientas o quedan camas libres sin ver",
+    "value": "Que todas las instructoras vean la misma agenda"
+  },
+  "instructor-de-pilates-a-domicilio--p1": {
+    "process": "coordinás direcciones y horarios por WhatsApp",
+    "pain": "se te pisan dos clientas",
+    "value": "Que no se pisen los domicilios"
+  },
+  "instructor-de-pilates-a-domicilio--p2": {
+    "process": "cobrás por transferencia y llevás la cuenta de memoria",
+    "pain": "no sabés bien quién te debe",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "instructor-de-pilates-a-domicilio--p3": {
+    "process": "si sumás otra instructora cada una anota por separado",
+    "pain": "se pisan las clientas",
+    "value": "Compartir la agenda sin que se pisen clientas"
+  },
+  "instructor-de-pilates-a-domicilio--p4": {
+    "process": "confirmás dirección y horario a mano",
+    "pain": "a veces llegás mal o nadie te espera",
+    "value": "Que las confirmaciones salgan solas"
+  },
+  "clinica-de-rendimiento-deportivo--p1": {
+    "process": "la historia de cada atleta está en papeles y carpetas sueltas",
+    "pain": "el resto del equipo no la encuentra rápido",
+    "value": "Tener la historia de cada atleta a mano para todo el equipo"
+  },
+  "clinica-de-rendimiento-deportivo--p2": {
+    "process": "coordinás las evaluaciones por WhatsApp entre varios profesionales",
+    "pain": "se te pisan dos pacientes",
+    "value": "Que no se pisen los turnos entre profesionales"
+  },
+  "clinica-de-rendimiento-deportivo--p3": {
+    "process": "no llevás ordenada la evolución test a test",
+    "pain": "armás a mano el reporte para el club",
+    "value": "Mostrar la evolución de cada atleta al instante"
+  },
+  "clinica-de-rendimiento-deportivo--p4": {
+    "process": "cobrás por transferencia",
+    "pain": "revisás a mano quién pagó",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "preparador-fisico-y-entrenador-de-alto-rendimiento--p1": {
+    "process": "coordinás los entrenamientos por WhatsApp",
+    "pain": "se te pisan dos sesiones en el mismo turno",
+    "value": "Que no se pisen las sesiones"
+  },
+  "preparador-fisico-y-entrenador-de-alto-rendimiento--p2": {
+    "process": "tenés los tests de cada atleta en planillas sueltas",
+    "pain": "te cuesta mostrar cómo viene",
+    "value": "Ver el progreso de cada atleta al instante"
+  },
+  "preparador-fisico-y-entrenador-de-alto-rendimiento--p3": {
+    "process": "anotás lesiones y antecedentes en cuadernos sueltos",
+    "pain": "no lo encontrás cuando lo necesitás",
+    "value": "Tener lesiones e historial de cada atleta a mano"
+  },
+  "preparador-fisico-y-entrenador-de-alto-rendimiento--p4": {
+    "process": "cobrás por transferencia y llevás la cuenta de memoria",
+    "pain": "no sabés bien quién te debe",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "escuela-de-futbol-o-academia-deportiva--p1": {
+    "process": "controlás la cuota de las familias a mano",
+    "pain": "el chico sigue entrenando aunque deban",
+    "value": "Cobrar la cuota todos los meses sin perseguir a nadie"
+  },
+  "escuela-de-futbol-o-academia-deportiva--p2": {
+    "process": "no llevás asistencia ni evolución de cada chico",
+    "pain": "armás a mano la respuesta para los padres",
+    "value": "Mostrar la evolución de cada chico al instante"
+  },
+  "escuela-de-futbol-o-academia-deportiva--p3": {
+    "process": "cobrás la cuota por transferencia",
+    "pain": "revisás a mano quién pagó",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "escuela-de-futbol-o-academia-deportiva--p4": {
+    "process": "cada entrenador maneja su categoría por separado",
+    "pain": "se pisan canchas y turnos",
+    "value": "Que todos los entrenadores vean la misma agenda de canchas"
+  },
+  "club-o-academia-de-tenis--p1": {
+    "process": "las reservas de cancha entran por WhatsApp",
+    "pain": "se te pisan dos socios en la misma cancha",
+    "value": "Que no se pisen las reservas de cancha"
+  },
+  "club-o-academia-de-tenis--p2": {
+    "process": "controlás la cuota a mano",
+    "pain": "los que deben siguen reservando cancha",
+    "value": "Cobrar la cuota todos los meses sin perseguir a nadie"
+  },
+  "club-o-academia-de-tenis--p3": {
+    "process": "cobrás cuotas y clases por transferencia",
+    "pain": "administración revisa a mano quién pagó",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "club-o-academia-de-tenis--p4": {
+    "process": "no llevás asistencia ni progreso de cada alumno",
+    "pain": "armás a mano la respuesta cuando preguntan",
+    "value": "Tener el progreso de cada alumno a mano"
+  },
+  "gimnasio-o-box-de-crossfit--p1": {
+    "process": "controlás la cuota a mano",
+    "pain": "los que deben siguen entrenando",
+    "value": "Cobrar la cuota todos los meses sin perseguir a nadie"
+  },
+  "gimnasio-o-box-de-crossfit--p2": {
+    "process": "las reservas entran por WhatsApp",
+    "pain": "se anotan más atletas que cupos",
+    "value": "Que no se pasen los cupos de cada clase"
+  },
+  "gimnasio-o-box-de-crossfit--p3": {
+    "process": "cobrás cuotas y clases por transferencia",
+    "pain": "revisás a mano quién pagó",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "gimnasio-o-box-de-crossfit--p4": {
+    "process": "avisás a mano vencimientos y clases reservadas",
+    "pain": "se olvidan y perdés el cupo",
+    "value": "Que los avisos de cuota y clase salgan solos"
+  },
+  "entrenador-personal--p1": {
+    "process": "coordinás los entrenamientos por WhatsApp",
+    "pain": "se te pisan dos sesiones",
+    "value": "Que no se pisen las sesiones"
+  },
+  "entrenador-personal--p2": {
+    "process": "tus clientes no tienen dónde ver pagos, rutina y turnos",
+    "pain": "te escriben todo el tiempo para preguntar",
+    "value": "Que cada cliente vea solo su rutina, pagos y turnos"
+  },
+  "entrenador-personal--p3": {
+    "process": "cobrás por transferencia y llevás la cuenta de memoria",
+    "pain": "no sabés bien quién te debe",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "entrenador-personal--p4": {
+    "process": "no anotás la asistencia y el progreso de cada cliente",
+    "pain": "tenés que hacer memoria cuando preguntan",
+    "value": "Tener el progreso de cada cliente a mano"
+  },
+  "estudio-de-arquitectura--p1": {
+    "process": "le mandás el avance de obra al cliente a mano",
+    "pain": "te llama todas las semanas a preguntar",
+    "value": "Que el cliente vea solo el avance de la obra"
+  },
+  "estudio-de-arquitectura--p2": {
+    "process": "armás los presupuestos en Word o Excel",
+    "pain": "tardan horas y quedan perdidos en WhatsApp",
+    "value": "Presupuestos en minutos que el cliente aprueba online"
+  },
+  "estudio-de-arquitectura--p3": {
+    "process": "los contratos se firman en papel y se escanean",
+    "pain": "tardan semanas o se pierden",
+    "value": "Contratos firmados online sin ida y vuelta"
+  },
+  "estudio-de-arquitectura--p4": {
+    "process": "el cliente no tiene dónde ver el estado del proyecto",
+    "pain": "te escribe a cada rato",
+    "value": "Que el cliente vea solo pagos, planos y avance"
+  },
+  "disenador-de-interiores--p1": {
+    "process": "cotizás los proyectos por WhatsApp o Instagram",
+    "pain": "se pierden en el chat sin respuesta",
+    "value": "Cotizaciones en minutos que el cliente aprueba online"
+  },
+  "disenador-de-interiores--p2": {
+    "process": "tenés los datos de cada cliente en el celular o la memoria",
+    "pain": "no te acordás en qué quedaste",
+    "value": "Tener cada cliente y proyecto a mano"
+  },
+  "disenador-de-interiores--p3": {
+    "process": "cobrás en etapas por transferencia",
+    "pain": "mandás mensajes preguntando si pudieron transferir",
+    "value": "Saber al instante quién pagó cada etapa"
+  },
+  "disenador-de-interiores--p4": {
+    "process": "el cliente no tiene dónde ver moodboard y presupuestos",
+    "pain": "te escribe a cada rato",
+    "value": "Que el cliente vea solo en qué etapa va su proyecto"
+  },
+  "constructora-de-viviendas--p1": {
+    "process": "armás informes de avance a mano",
+    "pain": "el cliente te llama cada semana a preguntar",
+    "value": "Que el cliente vea solo el avance de la obra"
+  },
+  "constructora-de-viviendas--p2": {
+    "process": "armás el presupuesto de cada vivienda en Excel",
+    "pain": "te lleva días y se pierde en un mail",
+    "value": "Presupuestos en minutos que el cliente aprueba online"
+  },
+  "constructora-de-viviendas--p3": {
+    "process": "los contratos de obra se firman en papel",
+    "pain": "se demoran semanas y atrasan el inicio",
+    "value": "Contratos de obra firmados online"
+  },
+  "constructora-de-viviendas--p4": {
+    "process": "llevás sueldos, horas y ausencias en Excel",
+    "pain": "siempre hay algún error",
+    "value": "Liquidar sueldos y horas sin errores"
+  },
+  "empresa-de-reformas-y-remodelaciones--p1": {
+    "process": "armás cada presupuesto a mano después de medir",
+    "pain": "tardás días y el cliente se va con otro",
+    "value": "Que el cliente vea el precio de su reforma al instante"
+  },
+  "empresa-de-reformas-y-remodelaciones--p2": {
+    "process": "anotás cada reforma en una libreta o un grupo de WhatsApp",
+    "pain": "se te pierde en qué etapa está cada trabajo",
+    "value": "Ver en qué etapa está cada reforma"
+  },
+  "empresa-de-reformas-y-remodelaciones--p3": {
+    "process": "llevás varias reformas a la vez sin un tablero",
+    "pain": "perdés el control de materiales y el cliente te llama",
+    "value": "Controlar el avance de cada obra y que el cliente lo vea"
+  },
+  "empresa-de-reformas-y-remodelaciones--p4": {
+    "process": "cobrás por etapas por transferencia",
+    "pain": "perseguís a cada cliente por WhatsApp",
+    "value": "Saber al instante quién pagó cada etapa"
+  },
+  "inmobiliaria-de-compra-y-venta--p1": {
+    "process": "publicás cada propiedad por separado en portal, Instagram y vidriera",
+    "pain": "actualizás todo a mano y contestás lo mismo una y otra vez",
+    "value": "Tener tus propiedades actualizadas en un solo lugar"
+  },
+  "inmobiliaria-de-compra-y-venta--p2": {
+    "process": "anotás los interesados en el celular o un Excel",
+    "pain": "no te acordás a quién volver a llamar",
+    "value": "Hacer seguimiento a cada interesado hasta que cierre"
+  },
+  "inmobiliaria-de-compra-y-venta--p3": {
+    "process": "los interesados te llegan por portal, Instagram y WhatsApp a la vez",
+    "pain": "si tardás se enfrían y se van con otro",
+    "value": "Responder al instante a cada interesado"
+  },
+  "inmobiliaria-de-compra-y-venta--p4": {
+    "process": "coordinás las visitas entre vendedores por WhatsApp",
+    "pain": "van dos al mismo depto o no va nadie",
+    "value": "Que todos los vendedores vean la misma agenda de visitas"
+  },
+  "gestor-de-alquileres-temporarios-airbnb--p1": {
+    "process": "coordinás check-in, check-out y limpieza por WhatsApp",
+    "pain": "se te superponen huéspedes o te olvidás la limpieza",
+    "value": "Que no se pisen las reservas"
+  },
+  "gestor-de-alquileres-temporarios-airbnb--p2": {
+    "process": "cobrás seña y saldo por transferencia",
+    "pain": "preguntás a cada huésped si pagó",
+    "value": "Saber al instante quién pagó antes de confirmar"
+  },
+  "gestor-de-alquileres-temporarios-airbnb--p3": {
+    "process": "el huésped no tiene dónde ver wifi, dirección y horario",
+    "pain": "te escribe a cada rato",
+    "value": "Que el huésped vea sola toda la info de su estadía"
+  },
+  "gestor-de-alquileres-temporarios-airbnb--p4": {
+    "process": "avisás a mano el check-in y la limpieza",
+    "pain": "el huésped llega y no está preparado",
+    "value": "Que los avisos de check-in y limpieza salgan solos"
+  },
+  "instalador-de-paneles-solares-y-fotovoltaica--p1": {
+    "process": "calculás cada presupuesto a mano según techo y consumo",
+    "pain": "tardás días y el cliente se enfría",
+    "value": "Que el cliente vea el precio de su instalación al instante"
+  },
+  "instalador-de-paneles-solares-y-fotovoltaica--p2": {
+    "process": "llevás varias instalaciones a la vez sin un tablero",
+    "pain": "perdés el control de en qué etapa está cada una",
+    "value": "Ver en qué etapa está cada instalación"
+  },
+  "instalador-de-paneles-solares-y-fotovoltaica--p3": {
+    "process": "el contrato se firma en papel",
+    "pain": "se demora y atrasa la obra",
+    "value": "Contratos de instalación firmados online"
+  },
+  "instalador-de-paneles-solares-y-fotovoltaica--p4": {
+    "process": "cobrás por etapas por transferencia",
+    "pain": "perseguís al cliente por WhatsApp",
+    "value": "Saber al instante quién pagó cada etapa"
+  },
+  "consultora-de-eficiencia-energetica-y-auditorias--p1": {
+    "process": "armás cada cotización a mano según superficie y consumo",
+    "pain": "tarda y atrasa la propuesta",
+    "value": "Que la empresa vea el precio de la auditoría al instante"
+  },
+  "consultora-de-eficiencia-energetica-y-auditorias--p2": {
+    "process": "armás cada informe de auditoría a mano con planillas",
+    "pain": "te come horas facturables",
+    "value": "Informes de auditoría que se generan solos"
+  },
+  "consultora-de-eficiencia-energetica-y-auditorias--p3": {
+    "process": "tenés los datos de cada empresa en mails y Excel",
+    "pain": "perdés el seguimiento de las propuestas",
+    "value": "Hacer seguimiento a cada propuesta hasta que cierre"
+  },
+  "consultora-de-eficiencia-energetica-y-auditorias--p4": {
+    "process": "facturás a empresas con plazos largos",
+    "pain": "perdés el rastro de qué factura está pendiente",
+    "value": "Saber al instante qué empresa pagó"
+  },
+  "empresa-de-alarmas-y-seguridad--p1": {
+    "process": "tenés cientos de clientes sin un registro único",
+    "pain": "no sabés a quién le vence el contrato o qué pidió",
+    "value": "Saber a quién le vence el contrato y qué pidió cada cliente"
+  },
+  "empresa-de-alarmas-y-seguridad--p2": {
+    "process": "anotás los services en una libreta o WhatsApp",
+    "pain": "se te pierde cuál quedó resuelto",
+    "value": "Ver el estado de cada service"
+  },
+  "empresa-de-alarmas-y-seguridad--p3": {
+    "process": "no controlás los vencimientos de los autos de los técnicos",
+    "pain": "se te vence el seguro o la VTV",
+    "value": "Que no se te venza la documentación de ningún vehículo"
+  },
+  "empresa-de-alarmas-y-seguridad--p4": {
+    "process": "perseguís a mano el abono de cientos de clientes",
+    "pain": "te come el día",
+    "value": "Saber al instante quién pagó el abono"
+  },
+  "empresa-de-camaras-y-cctv--p1": {
+    "process": "no tenés registro de lo que instalaste a cada cliente",
+    "pain": "no sabés a quién ofrecerle ampliación o mantenimiento",
+    "value": "Saber a quién le toca mantenimiento o ampliación"
+  },
+  "empresa-de-camaras-y-cctv--p2": {
+    "process": "anotás los services en un cuaderno",
+    "pain": "perdés el seguimiento de quién sigue esperando",
+    "value": "Ver el estado de cada service"
+  },
+  "empresa-de-camaras-y-cctv--p3": {
+    "process": "perseguís cada cobro por WhatsApp",
+    "pain": "te come tiempo",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "empresa-de-camaras-y-cctv--p4": {
+    "process": "el contrato con el consorcio se firma en papel",
+    "pain": "se demora y atrasa el trabajo",
+    "value": "Contratos firmados online sin demoras"
+  },
+  "agencia-de-diseno-grafico-y-branding--p1": {
+    "process": "tenés varios proyectos sin un registro único",
+    "pain": "no te acordás en qué quedó cada propuesta",
+    "value": "Hacer seguimiento a cada cliente y propuesta"
+  },
+  "agencia-de-diseno-grafico-y-branding--p2": {
+    "process": "armás las cotizaciones a mano",
+    "pain": "se pierden en un mail o chat sin respuesta",
+    "value": "Cotizaciones en minutos que el cliente aprueba online"
+  },
+  "agencia-de-diseno-grafico-y-branding--p3": {
+    "process": "el contrato de diseño se firma en papel",
+    "pain": "tarda en volver",
+    "value": "Contratos de diseño firmados online"
+  },
+  "agencia-de-diseno-grafico-y-branding--p4": {
+    "process": "el cliente no tiene dónde ver cómo va su proyecto",
+    "pain": "te escribe a cada rato",
+    "value": "Que el cliente vea solo el estado de su proyecto"
+  },
+  "disenador-grafico-y-branding-freelancer--p1": {
+    "process": "cotizás cada laburo a mano por WhatsApp",
+    "pain": "perdés el hilo y el cliente se enfría",
+    "value": "Cotizaciones en minutos que el cliente aprueba online"
+  },
+  "disenador-grafico-y-branding-freelancer--p2": {
+    "process": "cobrás anticipo y saldo por transferencia",
+    "pain": "perseguís al cliente para que te pague",
+    "value": "Saber al instante quién debe el saldo"
+  },
+  "disenador-grafico-y-branding-freelancer--p3": {
+    "process": "laburás muchas veces sin contrato",
+    "pain": "después hay líos por alcance o derechos",
+    "value": "Contratos firmados online en minutos"
+  },
+  "disenador-grafico-y-branding-freelancer--p4": {
+    "process": "tenés los clientes en la cabeza o notas sueltas",
+    "pain": "se te escapa el seguimiento de propuestas",
+    "value": "Hacer seguimiento a cada propuesta hasta que cierre"
+  },
+  "productora-de-video-podcast-y-contenido--p1": {
+    "process": "manejás varios clientes y agencias sin un registro único",
+    "pain": "no te acordás en qué quedó cada propuesta",
+    "value": "Hacer seguimiento a cada cliente y propuesta"
+  },
+  "productora-de-video-podcast-y-contenido--p2": {
+    "process": "armás el presupuesto de cada producción a mano",
+    "pain": "se pierde en un mail sin respuesta",
+    "value": "Presupuestos en minutos que el cliente aprueba online"
+  },
+  "productora-de-video-podcast-y-contenido--p3": {
+    "process": "el contrato de producción se firma en papel",
+    "pain": "se demora y atrasa el rodaje",
+    "value": "Contratos de producción firmados online"
+  },
+  "productora-de-video-podcast-y-contenido--p4": {
+    "process": "cobrás por etapas",
+    "pain": "perseguís al cliente por el pago pendiente",
+    "value": "Saber al instante quién pagó cada etapa"
+  },
+  "podcaster-y-creador-de-contenido-independiente--p1": {
+    "process": "querés cobrar una membresía pero controlarla a mano",
+    "pain": "es imposible de sostener solo",
+    "value": "Cobrar una membresía mensual sin perseguir a nadie"
+  },
+  "podcaster-y-creador-de-contenido-independiente--p2": {
+    "process": "cobrás contenido exclusivo y servicios sueltos",
+    "pain": "perseguir pagos te saca tiempo de grabar",
+    "value": "Saber al instante quién pagó"
+  },
+  "podcaster-y-creador-de-contenido-independiente--p3": {
+    "process": "dependés de plataformas ajenas para vender tu curso",
+    "pain": "no tenés un lugar propio",
+    "value": "Vender tu curso en un lugar propio"
+  },
+  "podcaster-y-creador-de-contenido-independiente--p4": {
+    "process": "publicás a mano lo mismo en cada red",
+    "pain": "te come horas",
+    "value": "Que tu contenido se publique solo en todas las redes"
+  },
+  "fotografo-comercial-y-de-eventos--p1": {
+    "process": "te piden fechas por WhatsApp e Instagram a la vez",
+    "pain": "aceptás dos eventos el mismo día",
+    "value": "Que no se pisen las fechas"
+  },
+  "fotografo-comercial-y-de-eventos--p2": {
+    "process": "cotizás cada evento a mano por chat",
+    "pain": "el presupuesto se pierde en la conversación",
+    "value": "Presupuestos en minutos que el cliente aprueba online"
+  },
+  "fotografo-comercial-y-de-eventos--p3": {
+    "process": "cerrás trabajos sin contrato firmado",
+    "pain": "si cancelan no tenés respaldo",
+    "value": "Tener cada evento respaldado con un contrato firmado"
+  },
+  "fotografo-comercial-y-de-eventos--p4": {
+    "process": "el cliente no sabe cuándo están sus fotos",
+    "pain": "te escribe todo el tiempo",
+    "value": "Que el cliente vea solo el estado de sus fotos"
+  },
+  "estudio-de-fotografia-de-productos-para-e-commerce--p1": {
+    "process": "las tiendas te piden fecha por WhatsApp",
+    "pain": "agendás dos catálogos el mismo día",
+    "value": "Que no se pisen las sesiones"
+  },
+  "estudio-de-fotografia-de-productos-para-e-commerce--p2": {
+    "process": "cobrás cada tanda de fotos a mano",
+    "pain": "perseguís a las tiendas para que te paguen",
+    "value": "Saber al instante qué tienda pagó y cuál debe"
+  },
+  "estudio-de-fotografia-de-productos-para-e-commerce--p3": {
+    "process": "trabajás con muchas tiendas sin un registro único",
+    "pain": "se te mezcla quién mandó catálogo y a quién volver a contactar",
+    "value": "Hacer seguimiento a cada tienda"
+  },
+  "estudio-de-fotografia-de-productos-para-e-commerce--p4": {
+    "process": "cotizás de memoria por chat",
+    "pain": "no queda registro de qué se aprobó",
+    "value": "Presupuestos en minutos que la tienda aprueba online"
+  },
+  "agencia-de-marketing-digital-y-seo--p1": {
+    "process": "manejás varias cuentas sin un registro único",
+    "pain": "perdés el seguimiento de cada una",
+    "value": "Ver en qué etapa está cada cuenta"
+  },
+  "agencia-de-marketing-digital-y-seo--p2": {
+    "process": "armás capturas de cada plataforma antes de cada reunión",
+    "pain": "perdés tiempo a mano",
+    "value": "Mostrar los números de cada cliente en una sola pantalla"
+  },
+  "agencia-de-marketing-digital-y-seo--p3": {
+    "process": "armás el reporte semanal de cada cliente a mano",
+    "pain": "te come medio día",
+    "value": "Reportes semanales que se generan solos"
+  },
+  "agencia-de-marketing-digital-y-seo--p4": {
+    "process": "recordás a mano a cada cliente que te debe el mes",
+    "pain": "perdés tiempo de campañas",
+    "value": "Saber al instante qué cuenta pagó"
+  },
+  "freelancer-de-redes-sociales-y-contenido--p1": {
+    "process": "subís a mano cada posteo en cada cuenta y plataforma",
+    "pain": "te come el día",
+    "value": "Que los posteos se publiquen solos"
+  },
+  "freelancer-de-redes-sociales-y-contenido--p2": {
+    "process": "las consultas te llegan por Instagram, WhatsApp y formularios mezcladas",
+    "pain": "algún interesado se enfría",
+    "value": "Responder al instante a cada interesado"
+  },
+  "freelancer-de-redes-sociales-y-contenido--p3": {
+    "process": "mandás el recordatorio de pago cliente por cliente",
+    "pain": "perdés tiempo cada mes",
+    "value": "Saber al instante quién pagó el mes"
+  },
+  "freelancer-de-redes-sociales-y-contenido--p4": {
+    "process": "tenés varios clientes sin un registro único",
+    "pain": "se te pierde quién aprobó, pagó o renueva",
+    "value": "Ver el estado de cada cliente en un solo lugar"
+  },
+  "consultora-de-it-y-desarrollo-de-software--p1": {
+    "process": "seguís las oportunidades entre mails y planillas",
+    "pain": "se te pierde en qué etapa quedó cada una",
+    "value": "Ver en qué etapa está cada propuesta"
+  },
+  "consultora-de-it-y-desarrollo-de-software--p2": {
+    "process": "armás cada propuesta desde cero",
+    "pain": "no sabés si el cliente la vio",
+    "value": "Propuestas en minutos que el cliente aprueba online"
+  },
+  "consultora-de-it-y-desarrollo-de-software--p3": {
+    "process": "arrancás proyectos sin contrato claro",
+    "pain": "después discutís qué estaba incluido",
+    "value": "Contratos con alcance claro firmados online"
+  },
+  "consultora-de-it-y-desarrollo-de-software--p4": {
+    "process": "el cliente te pregunta todo el tiempo cómo va su proyecto",
+    "pain": "perdés horas de desarrollo",
+    "value": "Que el cliente vea solo el estado de su proyecto"
+  },
+  "freelancer-de-desarrollo-web-y-apps--p1": {
+    "process": "armás cada presupuesto a mano",
+    "pain": "no sabés si el cliente lo aprobó",
+    "value": "Presupuestos en minutos que el cliente aprueba online"
+  },
+  "freelancer-de-desarrollo-web-y-apps--p2": {
+    "process": "cobrás por hitos por WhatsApp",
+    "pain": "mandás el mismo mensaje pidiendo que te transfieran",
+    "value": "Saber al instante qué hito falta cobrar"
+  },
+  "freelancer-de-desarrollo-web-y-apps--p3": {
+    "process": "arrancás proyectos de palabra o por chat",
+    "pain": "si cambian el alcance no tenés nada firmado",
+    "value": "Contratos con alcance claro firmados online"
+  },
+  "freelancer-de-desarrollo-web-y-apps--p4": {
+    "process": "tenés varios clientes sin un registro único",
+    "pain": "se te pierde a quién volver a escribir",
+    "value": "Hacer seguimiento a cada cliente"
+  },
+  "empresa-de-mudanzas-y-fletes--p1": {
+    "process": "armás cada presupuesto a mano según metros, pisos y distancia",
+    "pain": "tardás días y el cliente se va con otro",
+    "value": "Que el cliente vea el precio de su mudanza al instante"
+  },
+  "empresa-de-mudanzas-y-fletes--p2": {
+    "process": "coordinás varias mudanzas a la vez sin un registro",
+    "pain": "se te mezcla qué camión va a dónde",
+    "value": "Ver el estado de cada mudanza"
+  },
+  "empresa-de-mudanzas-y-fletes--p3": {
+    "process": "cobrás en efectivo o transferencia sin registro",
+    "pain": "no sabés a quién le falta el saldo",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "empresa-de-mudanzas-y-fletes--p4": {
+    "process": "programás varias mudanzas sin planificar el recorrido",
+    "pain": "el camión da vueltas de más y llega tarde",
+    "value": "Hacer el recorrido más corto entre mudanzas"
+  },
+  "flete-rapido-y-delivery-de-muebles--p1": {
+    "process": "cobrás cada flete en el momento sin anotarlo",
+    "pain": "se te mezcla quién pagó",
+    "value": "Saber al instante quién te pagó"
+  },
+  "flete-rapido-y-delivery-de-muebles--p2": {
+    "process": "te entran varios fletes por WhatsApp",
+    "pain": "se te mezcla qué buscar, dónde y a qué hora",
+    "value": "Tener cada flete ordenado con dirección y horario"
+  },
+  "flete-rapido-y-delivery-de-muebles--p3": {
+    "process": "aceptás fletes de distintas zonas sin ordenar",
+    "pain": "manejás de más y perdés el día",
+    "value": "Hacer el recorrido más corto entre fletes"
+  },
+  "flete-rapido-y-delivery-de-muebles--p4": {
+    "process": "coordinás el horario por WhatsApp",
+    "pain": "llegás y no hay nadie para recibir",
+    "value": "Que el aviso del horario salga solo"
+  },
+  "mensajeria-courier-y-encomiendas--p1": {
+    "process": "averiguás llamando al repartidor dónde está cada envío",
+    "pain": "el comercio te llama a cada rato",
+    "value": "Que el comercio siga su envío solo"
+  },
+  "mensajeria-courier-y-encomiendas--p2": {
+    "process": "cobrás a cada comercio llamando uno por uno",
+    "pain": "perdés tiempo cada mes",
+    "value": "Saber al instante qué comercio te debe"
+  },
+  "mensajeria-courier-y-encomiendas--p3": {
+    "process": "los pedidos te entran por WhatsApp",
+    "pain": "se te mezcla cuál se despachó",
+    "value": "Ver el estado de cada pedido"
+  },
+  "mensajeria-courier-y-encomiendas--p4": {
+    "process": "no monitoreás demoras ni repartidores",
+    "pain": "te enterás cuando el comercio reclama",
+    "value": "Enterarte de una demora antes que el comercio"
+  },
+  "moto-mensajero-y-cadete-independiente--p1": {
+    "process": "el comercio no ve dónde estás",
+    "pain": "te escribe cada dos minutos",
+    "value": "Que el comercio vea dónde está su pedido"
+  },
+  "moto-mensajero-y-cadete-independiente--p2": {
+    "process": "trabajás con varios comercios sin registro",
+    "pain": "no sabés quién te pagó el día",
+    "value": "Saber al instante quién te pagó"
+  },
+  "moto-mensajero-y-cadete-independiente--p3": {
+    "process": "no tenés aviso de demoras",
+    "pain": "te enterás cuando el comercio reclama",
+    "value": "Enterarte de una demora antes que el comercio"
+  },
+  "rent-a-car-y-alquiler-de-vehiculos--p1": {
+    "process": "las reservas te llegan por WhatsApp e Instagram a la vez",
+    "pain": "comprometés el mismo auto a dos clientes",
+    "value": "Que no se pisen las reservas de autos"
+  },
+  "rent-a-car-y-alquiler-de-vehiculos--p2": {
+    "process": "no controlás los vencimientos de cada auto",
+    "pain": "se te vence el seguro o la VTV",
+    "value": "Que no se te venza la documentación de ningún auto"
+  },
+  "rent-a-car-y-alquiler-de-vehiculos--p3": {
+    "process": "cobrás alquiler y depósito por transferencia",
+    "pain": "no sabés bien a quién le falta el saldo",
+    "value": "Saber al instante quién pagó todo y a quién le falta"
+  },
+  "rent-a-car-y-alquiler-de-vehiculos--p4": {
+    "process": "entregás el auto sin contrato claro del estado",
+    "pain": "después discutís por un rayón",
+    "value": "Contratos con el estado del auto firmados online"
+  },
+  "alquiler-de-bicicletas-y-scooters-electricos--p1": {
+    "process": "los turistas reservan por Instagram",
+    "pain": "reservás más unidades de las que tenés",
+    "value": "No reservar más unidades de las disponibles"
+  },
+  "alquiler-de-bicicletas-y-scooters-electricos--p2": {
+    "process": "cobrás por hora en el momento",
+    "pain": "no sabés cuánto facturaste en el día",
+    "value": "Saber cuánto facturaste en el día"
+  },
+  "alquiler-de-bicicletas-y-scooters-electricos--p3": {
+    "process": "no registrás el mantenimiento ni la batería de cada unidad",
+    "pain": "le das a un turista una que no está bien",
+    "value": "Saber qué unidad necesita mantenimiento o carga"
+  },
+  "empresa-de-transporte-escolar--p1": {
+    "process": "no controlás los vencimientos de cada combi",
+    "pain": "se te puede vencer el seguro o la VTV",
+    "value": "Que no se te venza la documentación de ninguna combi"
+  },
+  "empresa-de-transporte-escolar--p2": {
+    "process": "avisás los cambios a los padres uno por uno",
+    "pain": "perdés tiempo con cada familia",
+    "value": "Que los avisos a los padres salgan solos"
+  },
+  "empresa-de-transporte-escolar--p3": {
+    "process": "mandás a mano el recordatorio de la cuota",
+    "pain": "perseguís a los que se atrasan cada mes",
+    "value": "Saber al instante quién pagó la cuota"
+  },
+  "empresa-de-transporte-escolar--p4": {
+    "process": "los padres no tienen dónde ver horarios y pagos",
+    "pain": "te escriben todo el tiempo",
+    "value": "Que cada familia vea sola horarios y pagos"
+  },
+  "transporte-de-turismo-y-excursiones--p1": {
+    "process": "agencias y hoteles te piden traslados por WhatsApp",
+    "pain": "comprometés la misma unidad dos veces",
+    "value": "Que no se pisen los traslados"
+  },
+  "transporte-de-turismo-y-excursiones--p2": {
+    "process": "cobrás cada traslado por separado sin registro",
+    "pain": "perseguís a cada agencia u hotel",
+    "value": "Saber al instante quién pagó cada traslado"
+  },
+  "transporte-de-turismo-y-excursiones--p3": {
+    "process": "no controlás los vencimientos de cada unidad",
+    "pain": "se te vence el seguro justo antes de un viaje",
+    "value": "Que no se te venza la documentación de ninguna unidad"
+  },
+  "transporte-de-turismo-y-excursiones--p4": {
+    "process": "trabajás con varias agencias y hoteles sin un registro único",
+    "pain": "se te pierde con quién cerraste y a quién volver a llamar",
+    "value": "Hacer seguimiento a cada agencia y hotel"
+  },
+  "operador-logistico-para-e-commerce--p1": {
+    "process": "no tenés seguimiento en tiempo real de los envíos",
+    "pain": "los clientes te llaman y vos llamás a cada repartidor",
+    "value": "Que tiendas y clientes sigan sus envíos solos"
+  },
+  "operador-logistico-para-e-commerce--p2": {
+    "process": "cargás los pedidos en tu sistema y en el de la tienda",
+    "pain": "se generan diferencias que hay que explicar",
+    "value": "Que los pedidos se sincronicen solos con cada tienda"
+  },
+  "operador-logistico-para-e-commerce--p3": {
+    "process": "no monitoreás camiones, repartidores ni conexiones",
+    "pain": "te enterás cuando el cliente reclama",
+    "value": "Enterarte de un problema antes que el cliente"
+  },
+  "operador-logistico-para-e-commerce--p4": {
+    "process": "no tenés un panel con envíos, puntualidad y costos",
+    "pain": "decidís a ojo",
+    "value": "Ver los números de tu operación en una sola pantalla"
+  },
+  "centro-de-fulfillment-y-almacenaje-para-e-commerce--p1": {
+    "process": "guardás stock de varias tiendas sin separarlo bien",
+    "pain": "preparás mal pedidos o prometés stock que no hay",
+    "value": "Saber siempre el stock de cada tienda"
+  },
+  "centro-de-fulfillment-y-almacenaje-para-e-commerce--p2": {
+    "process": "las tiendas no ven en qué etapa está el pedido",
+    "pain": "te llaman a vos para preguntar",
+    "value": "Que tiendas y clientes sigan sus pedidos solos"
+  },
+  "centro-de-fulfillment-y-almacenaje-para-e-commerce--p3": {
+    "process": "perseguís a mano los cobros a cada tienda",
+    "pain": "no ves en un lugar quién debe",
+    "value": "Saber al instante qué tienda pagó y cuál debe"
+  },
+  "centro-de-fulfillment-y-almacenaje-para-e-commerce--p4": {
+    "process": "no tenés un panel con movimiento, espacio y rentabilidad",
+    "pain": "no sabés qué cliente te conviene",
+    "value": "Ver ocupación y rentabilidad por tienda en una pantalla"
+  },
+  "tienda-de-ropa-o-accesorios-por-instagram--p1": {
+    "process": "contestás uno por uno talles y precios por DM",
+    "pain": "se te escapan ventas de los que no esperan",
+    "value": "Que la clienta vea talles y precios y compre sola"
+  },
+  "tienda-de-ropa-o-accesorios-por-instagram--p2": {
+    "process": "cobrás por transferencia y Mercado Pago en el chat",
+    "pain": "perdés la cuenta de quién pagó seña o total",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "tienda-de-ropa-o-accesorios-por-instagram--p3": {
+    "process": "los pedidos te llegan por capturas y audios",
+    "pain": "se te mezclan talles y colores",
+    "value": "Recibir los pedidos ordenados con talle y color"
+  },
+  "tienda-de-ropa-o-accesorios-por-instagram--p4": {
+    "process": "no tenés el stock en un solo lugar",
+    "pain": "vendés la misma prenda a dos personas",
+    "value": "No vender una prenda que ya no tenés"
+  },
+  "e-commerce-con-tienda-propia--p1": {
+    "process": "tu tienda no muestra bien catálogo, precios y stock",
+    "pain": "perdés ventas de gente que no confía",
+    "value": "Una tienda clara que genere confianza para comprar"
+  },
+  "e-commerce-con-tienda-propia--p2": {
+    "process": "vendés en varios canales y el stock no se actualiza solo",
+    "pain": "confirmás ventas de algo que no tenés",
+    "value": "Que el stock se actualice solo en todos los canales"
+  },
+  "e-commerce-con-tienda-propia--p3": {
+    "process": "cobrás por distintos medios sin un tablero único",
+    "pain": "no sabés quién pagó y a quién reclamarle",
+    "value": "Ver todos los pagos en un solo lugar"
+  },
+  "e-commerce-con-tienda-propia--p4": {
+    "process": "el cliente no ve en qué estado está su pedido",
+    "pain": "te escribe todos los días",
+    "value": "Que el cliente siga su pedido solo"
+  },
+  "marketplace-de-vendedores-locales--p1": {
+    "process": "querés sumar vendedores armando todo a mano en planillas",
+    "pain": "no escala",
+    "value": "Sumar vendedores a una plataforma que funcione sola"
+  },
+  "marketplace-de-vendedores-locales--p2": {
+    "process": "cada vendedor cobra por su lado",
+    "pain": "te cuesta calcular cuánto le toca a cada uno y tu comisión",
+    "value": "Saber al instante cuánto le toca a cada vendedor"
+  },
+  "marketplace-de-vendedores-locales--p3": {
+    "process": "no tenés un panel de la plataforma",
+    "pain": "no sabés cuánto se vende ni qué vendedor mueve más",
+    "value": "Ver los números del marketplace en una sola pantalla"
+  },
+  "marketplace-de-vendedores-locales--p4": {
+    "process": "el sistema de pagos y el de vendedores no se hablan",
+    "pain": "copiás datos a mano para que cierren",
+    "value": "Que pagos y vendedores se sincronicen solos"
+  },
+  "agente-de-importacion-y-exportacion--p1": {
+    "process": "el historial de cada cliente está entre cuadernos, mails y memoria",
+    "pain": "no sabés en qué quedó cada uno",
+    "value": "Tener cada cliente y trámite a mano"
+  },
+  "agente-de-importacion-y-exportacion--p2": {
+    "process": "cada operación tiene muchos pasos sin registrar",
+    "pain": "se te traspapela en qué etapa está",
+    "value": "Ver en qué etapa está cada operación"
+  },
+  "agente-de-importacion-y-exportacion--p3": {
+    "process": "cobrás honorarios y gastos a varios clientes a la vez",
+    "pain": "perseguís pagos atrasados",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "agente-de-importacion-y-exportacion--p4": {
+    "process": "facturás cada operación cargando todo de nuevo",
+    "pain": "perdés tiempo administrativo",
+    "value": "Facturar con los datos de cada cliente ya cargados"
+  },
+  "distribuidora-o-mayorista-de-productos--p1": {
+    "process": "los pedidos te llegan por audios y capturas de WhatsApp",
+    "pain": "se mezclan cantidades y mandás algo distinto",
+    "value": "Recibir los pedidos ordenados y exactos"
+  },
+  "distribuidora-o-mayorista-de-productos--p2": {
+    "process": "no sabés exacto cuánto tenés en el depósito",
+    "pain": "confirmás algo que no podés cumplir",
+    "value": "Saber siempre cuánto stock tenés"
+  },
+  "distribuidora-o-mayorista-de-productos--p3": {
+    "process": "vendés a plazo a muchos comercios",
+    "pain": "perdés la cuenta de quién te debe",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "distribuidora-o-mayorista-de-productos--p4": {
+    "process": "facturás pedido por pedido a mano",
+    "pain": "cargás los mismos datos cada vez",
+    "value": "Facturar sin cargar todo a mano"
+  },
+  "distribuidora-de-alimentos-y-bebidas--p1": {
+    "process": "los pedidos te llegan por audios a la mañana",
+    "pain": "salís a repartir con errores",
+    "value": "Recibir los pedidos ordenados y exactos"
+  },
+  "distribuidora-de-alimentos-y-bebidas--p2": {
+    "process": "no sabés exacto cuánto tenés de cada producto",
+    "pain": "te quedás sin stock cuando más te piden",
+    "value": "No quedarte sin stock en el momento de más demanda"
+  },
+  "distribuidora-de-alimentos-y-bebidas--p3": {
+    "process": "cobrás en el momento o a cuenta corriente",
+    "pain": "perdés la cuenta de quién te debe",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "distribuidora-de-alimentos-y-bebidas--p4": {
+    "process": "armás la ruta de reparto a ojo",
+    "pain": "das vueltas de más y gastás combustible",
+    "value": "Hacer el recorrido más corto del reparto"
+  },
+  "kiosco-o-almacen-de-barrio--p1": {
+    "process": "no llevás el stock",
+    "pain": "te enterás que falta algo cuando el cliente lo pide",
+    "value": "No quedarte sin productos"
+  },
+  "kiosco-o-almacen-de-barrio--p2": {
+    "process": "no premiás al vecino que vuelve",
+    "pain": "compra en el kiosco de la otra esquina",
+    "value": "Que los vecinos te elijan a vos"
+  },
+  "kiosco-o-almacen-de-barrio--p3": {
+    "process": "no tenés los números del negocio",
+    "pain": "decidís todo a ojo",
+    "value": "Saber qué se vende más y cuánto ganás"
+  },
+  "local-de-indumentaria-y-accesorios--p1": {
+    "process": "vendés solo en el local o por Instagram talle por talle",
+    "pain": "perdés a los que quieren comprar online",
+    "value": "Vender online con tu catálogo completo"
+  },
+  "local-de-indumentaria-y-accesorios--p2": {
+    "process": "no tenés el stock de talles y colores en un solo lugar",
+    "pain": "prometés algo que ya se vendió",
+    "value": "No prometer una prenda que ya no tenés"
+  },
+  "local-de-indumentaria-y-accesorios--p3": {
+    "process": "cobrás por transferencia, efectivo y Mercado Pago mezclado",
+    "pain": "perdés la cuenta de quién pagó qué",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "local-de-indumentaria-y-accesorios--p4": {
+    "process": "no premiás a la clienta que vuelve",
+    "pain": "compra una vez y no vuelve",
+    "value": "Que las clientas vuelvan"
+  },
+  "electricista-plomero-o-gasista--p1": {
+    "process": "mandás el presupuesto por WhatsApp en un mensaje",
+    "pain": "se pierde y no queda registro de que lo aprobó",
+    "value": "Presupuestos que el cliente aprueba online"
+  },
+  "electricista-plomero-o-gasista--p2": {
+    "process": "no anotás los trabajos que entran",
+    "pain": "te olvidás en qué quedaste con cada cliente",
+    "value": "Ver en qué estado está cada trabajo"
+  },
+  "electricista-plomero-o-gasista--p3": {
+    "process": "coordinás con tu ayudante por WhatsApp",
+    "pain": "se pisan los horarios",
+    "value": "Compartir la agenda con tu ayudante sin pisarse"
+  },
+  "electricista-plomero-o-gasista--p4": {
+    "process": "cobrás después de terminar",
+    "pain": "andás atrás del cliente para que te pague",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "taller-mecanico-de-motos--p1": {
+    "process": "coordinás los turnos por WhatsApp",
+    "pain": "se te superponen motos o perdés horas por ausentes",
+    "value": "Que no se pisen los turnos"
+  },
+  "taller-mecanico-de-motos--p2": {
+    "process": "no registrás qué le hacés a cada moto",
+    "pain": "se te mezcla qué falta y qué repuesto usaste",
+    "value": "Ver el estado y los repuestos de cada moto"
+  },
+  "taller-mecanico-de-motos--p3": {
+    "process": "no sabés qué repuestos tenés",
+    "pain": "te frenás en medio de un trabajo por una pieza",
+    "value": "Saber siempre qué repuestos tenés"
+  },
+  "taller-mecanico-de-motos--p4": {
+    "process": "cobrás al entregar la moto",
+    "pain": "andás atrás del cliente para que te pague",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "taller-mecanico-de-autos--p1": {
+    "process": "no registrás qué le hacés a cada auto",
+    "pain": "se te mezcla la etapa y los repuestos",
+    "value": "Ver el estado y los repuestos de cada auto"
+  },
+  "taller-mecanico-de-autos--p2": {
+    "process": "pasás el presupuesto de palabra o por WhatsApp",
+    "pain": "el cliente después discute el precio",
+    "value": "Presupuestos que el cliente aprueba online"
+  },
+  "taller-mecanico-de-autos--p3": {
+    "process": "no sabés qué repuestos tenés",
+    "pain": "te frenás en medio de un arreglo por una pieza",
+    "value": "Saber siempre qué repuestos tenés"
+  },
+  "taller-mecanico-de-autos--p4": {
+    "process": "cobrás al entregar el auto",
+    "pain": "andás atrás del cliente para que te pague",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "servicio-tecnico-de-celulares-y-electrodomesticos--p1": {
+    "process": "no registrás cada equipo que entra",
+    "pain": "se te mezcla qué tiene, en qué etapa está y de quién es",
+    "value": "Ver el estado de cada equipo"
+  },
+  "servicio-tecnico-de-celulares-y-electrodomesticos--p2": {
+    "process": "avisás a mano cuando el equipo está listo",
+    "pain": "te llaman todos los días o se olvidan de retirarlo",
+    "value": "Que el aviso de equipo listo salga solo"
+  },
+  "servicio-tecnico-de-celulares-y-electrodomesticos--p3": {
+    "process": "no sabés qué repuestos tenés",
+    "pain": "te frenás por falta de una pieza",
+    "value": "Saber siempre qué repuestos tenés"
+  },
+  "servicio-tecnico-de-celulares-y-electrodomesticos--p4": {
+    "process": "cobrás cuando retiran el equipo",
+    "pain": "andás atrás del cliente para que te pague",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "reparacion-de-electrodomesticos-a-domicilio--p1": {
+    "process": "los pedidos te entran por WhatsApp sin anotarlos",
+    "pain": "se te mezcla qué arreglar y dónde",
+    "value": "Ver el estado de cada reparación"
+  },
+  "reparacion-de-electrodomesticos-a-domicilio--p2": {
+    "process": "cobrás después de reparar",
+    "pain": "andás atrás del cliente para que te pague",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "reparacion-de-electrodomesticos-a-domicilio--p3": {
+    "process": "armás el recorrido a ojo",
+    "pain": "das vueltas de más entre barrios",
+    "value": "Hacer el recorrido más corto entre visitas"
+  },
+  "reparacion-de-electrodomesticos-a-domicilio--p4": {
+    "process": "nadie le recuerda la visita al cliente",
+    "pain": "llegás y no hay nadie",
+    "value": "Que el recordatorio de la visita salga solo"
+  },
+  "paisajista-y-empresa-de-jardineria--p1": {
+    "process": "mezclás clientes fijos y proyectos puntuales sin registro",
+    "pain": "se te pasa el seguimiento de presupuestos",
+    "value": "Hacer seguimiento a cada cliente y presupuesto"
+  },
+  "paisajista-y-empresa-de-jardineria--p2": {
+    "process": "todo vive en la cabeza del cuadrillero",
+    "pain": "no sabés en qué quedó cada jardín",
+    "value": "Ver el estado de cada jardín"
+  },
+  "paisajista-y-empresa-de-jardineria--p3": {
+    "process": "cobrás en efectivo o persiguiendo al cliente",
+    "pain": "no sabés quién debe el mes",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "paisajista-y-empresa-de-jardineria--p4": {
+    "process": "vas a medir y calculás cada presupuesto a mano",
+    "pain": "el cliente cotiza con otro mientras tanto",
+    "value": "Que el cliente vea el precio al instante"
+  },
+  "empresa-de-paisajismo-para-condominios-y-edificios--p1": {
+    "process": "manejás varios consorcios sin registro único",
+    "pain": "se te mezcla qué pidió cada uno y cuándo vence el contrato",
+    "value": "Saber qué pidió cada consorcio y cuándo vence su contrato"
+  },
+  "empresa-de-paisajismo-para-condominios-y-edificios--p2": {
+    "process": "facturás a las administraciones",
+    "pain": "perseguís el pago sin saber qué edificio debe",
+    "value": "Saber al instante qué edificio pagó y cuál debe"
+  },
+  "empresa-de-paisajismo-para-condominios-y-edificios--p3": {
+    "process": "coordinás las cuadrillas por WhatsApp",
+    "pain": "van dos al mismo edificio o ninguna",
+    "value": "Que todas las cuadrillas vean la misma agenda"
+  },
+  "empresa-de-paisajismo-para-condominios-y-edificios--p4": {
+    "process": "armás los contratos a mano en papel",
+    "pain": "se pierden las renovaciones",
+    "value": "Contratos de mantenimiento firmados online"
+  },
+  "empresa-de-limpieza-de-hogares-y-oficinas--p1": {
+    "process": "no registrás las limpiezas del día",
+    "pain": "el personal te llama para confirmar",
+    "value": "Ver qué limpieza está hecha y cuál falta"
+  },
+  "empresa-de-limpieza-de-hogares-y-oficinas--p2": {
+    "process": "cobrás las limpiezas recurrentes llamando",
+    "pain": "no sabés bien quién debe",
+    "value": "Saber al instante qué oficina pagó el mes"
+  },
+  "empresa-de-limpieza-de-hogares-y-oficinas--p3": {
+    "process": "no controlás los vencimientos de la camioneta",
+    "pain": "se te vence el seguro o la VTV",
+    "value": "Que no se te venza la documentación del vehículo"
+  },
+  "empresa-de-limpieza-de-hogares-y-oficinas--p4": {
+    "process": "mezclás clientes puntuales y mensuales sin registro",
+    "pain": "perdés a quién volver a ofrecerle el servicio",
+    "value": "Volver a ofrecerle el servicio a cada cliente a tiempo"
+  },
+  "limpieza-post-obra-y-construccion--p1": {
+    "process": "llevás varias obras a la vez sin registro",
+    "pain": "no sabés cuál ya limpiaron",
+    "value": "Ver el estado de cada obra"
+  },
+  "limpieza-post-obra-y-construccion--p2": {
+    "process": "la constructora te paga tarde",
+    "pain": "no sabés qué obra ya cobraste",
+    "value": "Saber al instante qué obra cobraste"
+  },
+  "limpieza-post-obra-y-construccion--p3": {
+    "process": "trabajás con varias constructoras sin registro",
+    "pain": "se te pierde a quién ofrecerle la próxima obra",
+    "value": "Volver a venderles a constructoras y arquitectos"
+  },
+  "limpieza-post-obra-y-construccion--p4": {
+    "process": "armás cada presupuesto a mano con fotos de WhatsApp",
+    "pain": "te demorás y la obra quiere entregar",
+    "value": "Que el constructor vea el precio al instante"
+  },
+  "pet-grooming-y-peluqueria-canina--p1": {
+    "process": "tomás los turnos por WhatsApp",
+    "pain": "se te pisan dos perros o no ves una cancelación",
+    "value": "Que no se pisen los turnos"
+  },
+  "pet-grooming-y-peluqueria-canina--p2": {
+    "process": "no anotás raza, corte y mañas de cada mascota",
+    "pain": "preguntás todo de cero cada vez",
+    "value": "Tener la ficha de cada mascota a mano"
+  },
+  "pet-grooming-y-peluqueria-canina--p3": {
+    "process": "cobrás en el momento con la mascota en brazos",
+    "pain": "si el dueño se va sin pagar quedás corriendo atrás",
+    "value": "Saber al instante quién pagó y quién debe"
+  },
+  "pet-grooming-y-peluqueria-canina--p4": {
+    "process": "nadie le avisa al dueño el día antes",
+    "pain": "te faltan sin aviso",
+    "value": "Que los dueños no falten sin avisar"
+  },
+  "peluqueria-canina-a-domicilio--p1": {
+    "process": "coordinás turnos y direcciones por WhatsApp",
+    "pain": "se te pisan los horarios",
+    "value": "Que no se pisen los domicilios"
+  },
+  "peluqueria-canina-a-domicilio--p2": {
+    "process": "cobrás casa por casa",
+    "pain": "quedás corriendo atrás del pago",
+    "value": "Cobrar antes de llegar y saber quién pagó"
+  },
+  "peluqueria-canina-a-domicilio--p3": {
+    "process": "armás el recorrido a ojo",
+    "pain": "cruzás la ciudad y perdés horas",
+    "value": "Hacer el recorrido más corto entre domicilios"
+  },
+  "peluqueria-canina-a-domicilio--p4": {
+    "process": "nadie le recuerda el turno al dueño",
+    "pain": "hacés el viaje para nada",
+    "value": "Que los dueños no se olviden del turno"
+  },
+  "organizador-de-bodas-y-eventos-sociales--p1": {
+    "process": "manejás varias bodas con distintos proveedores",
+    "pain": "se te mezcla qué le prometiste a cada pareja",
+    "value": "Tener cada boda y sus proveedores a mano"
+  },
+  "organizador-de-bodas-y-eventos-sociales--p2": {
+    "process": "armás el presupuesto a mano combinando proveedores",
+    "pain": "se pierde en el chat con los novios",
+    "value": "Presupuestos en minutos que los novios aprueban online"
+  },
+  "organizador-de-bodas-y-eventos-sociales--p3": {
+    "process": "el contrato queda en papel o un mail perdido",
+    "pain": "ante un reclamo no tenés nada firmado",
+    "value": "Tener cada boda respaldada con un contrato firmado"
+  },
+  "organizador-de-bodas-y-eventos-sociales--p4": {
+    "process": "cobrás señas y cuotas por transferencia",
+    "pain": "perdés qué pareja pagó qué parte",
+    "value": "Saber al instante qué parte pagó cada pareja"
+  },
+  "salon-de-fiestas-y-eventos--p1": {
+    "process": "las consultas de fecha entran por WhatsApp",
+    "pain": "se te pisan dos eventos el mismo día",
+    "value": "Que no se pisen las fechas"
+  },
+  "salon-de-fiestas-y-eventos--p2": {
+    "process": "cobrás seña y saldo por transferencia",
+    "pain": "no sabés qué evento está pago",
+    "value": "Saber al instante qué evento está pago"
+  },
+  "salon-de-fiestas-y-eventos--p3": {
+    "process": "armás el presupuesto a mano según invitados",
+    "pain": "se pierde en el chat",
+    "value": "Presupuestos en minutos que el cliente aprueba online"
+  },
+  "salon-de-fiestas-y-eventos--p4": {
+    "process": "el contrato queda en papel",
+    "pain": "ante un problema no tenés nada firmado",
+    "value": "Tener cada evento respaldado con un contrato firmado"
+  }
+}

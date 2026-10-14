@@ -58,7 +58,10 @@ export default async function NichePage({ params }: PageProps<"/nichos/[id]">) {
                 {s ? (
                   <CardContent className="flex flex-col gap-2 border-t border-border pt-4">
                     <div className="flex flex-wrap items-start justify-between gap-2">
-                      <h3 className="font-semibold">{s.name}</h3>
+                      <h3 className="font-semibold">
+                        {s.name}
+                        {s.value ? <span className="block text-sm font-normal text-muted-foreground">{s.value}</span> : null}
+                      </h3>
                       <Badge tone="primary" className="tabular-nums">
                         {formatUsd(s.priceMin, s.priceMax)}
                       </Badge>

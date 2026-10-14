@@ -1,7 +1,7 @@
 // Convierte "docs/PROBLEMAS DE NICHOS Y SOLUCIONES.docx" en data/niches.json.
 // Uso: pnpm parse:niches  (requiere el binario `unzip` en el sistema)
 import { execFileSync } from "node:child_process";
-import { writeFileSync, mkdirSync, rmSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync, mkdirSync, rmSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -201,6 +201,29 @@ for (const n of niches) {
   seen.set(n.id, count + 1);
   if (count > 0) n.id = `${n.id}-${count + 1}`;
 }
+// Frases cortas escritas a mano (data/pain-phrases.json): proceso y dolor para el resumen de cierre,
+// y el valor de la solución para el checklist de prioridades
+const phrasesFile = resolve(root, "data/pain-phrases.json");
+const phrases = existsSync(phrasesFile) ? JSON.parse(readFileSync(phrasesFile, "utf8")) : {};
+const unused = new Set(Object.keys(phrases));
+const missing = [];
+for (const n of niches) {
+  for (const p of n.problems) {
+    const ph = phrases[p.id];
+    if (!ph) {
+      missing.push(p.id);
+      continue;
+    }
+    unused.delete(p.id);
+    if (ph.process) p.process = ph.process;
+    if (ph.pain) p.pain = ph.pain;
+    const s = n.solutions.find((x) => x.problemId === p.id);
+    if (s && ph.value) s.value = ph.value;
+  }
+}
+if (missing.length) console.warn(`Sin frases cortas (${missing.length}): ${missing.slice(0, 10).join(", ")}${missing.length > 10 ? "…" : ""}`);
+if (unused.size) console.warn(`Frases sin problema (${unused.size}): ${[...unused].slice(0, 10).join(", ")}`);
+
 const usedCategories = categories.filter((c) => niches.some((n) => n.categoryId === c.id));
 
 mkdirSync(dirname(out), { recursive: true });

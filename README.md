@@ -62,6 +62,8 @@ Desde el nicho podés tocar **"Prospectar un negocio de este nicho"** para empez
 
 En **Nuevo prospecto**, cargá el nombre del negocio y elegí el nicho. Desde ese momento **se guarda solo**.
 
+Apenas elegís el nicho aparecen sus **problemas típicos y la solución de cada uno** (con precio y qué incluye), para que sepas por dónde guiar la charla. Son hipótesis para vos: no se las leas al cliente.
+
 Recorré los pasos con **Siguiente**, o tocá cualquier paso del indicador de arriba. En cada pregunta:
 
 1. Anotá lo que dijo **con sus palabras**.
@@ -77,6 +79,8 @@ En **Problemas del nicho**, cada problema se marca como **Validado** cuando:
 
 - la pregunta *"¿cuándo fue la última vez?"* tiene un hecho concreto,
 - y además hay un hecho concreto en *costo* o en *qué probó para resolverlo*.
+
+En **Su negocio y prioridades**, debajo de *"¿Qué es lo que más tiempo o dolores de cabeza te lleva hoy?"*, además del cuadro de texto podés **seleccionar los dolores conocidos del nicho** que el cliente mencionó por su cuenta. Esos problemas aparecen primero en **Problemas del nicho**, abiertos y marcados como **"Lo mencionó"**. La marca también se puede poner o sacar desde cada tarjeta.
 
 Si el cliente lo mencionó por su cuenta con un caso claro, también podés marcar **"Confirmado manualmente"**.
 
@@ -102,7 +106,10 @@ El puntaje (0–100) suma:
 
 - problemas validados: hasta 40 puntos (20 por problema, máximo 2);
 - criterios de early evangelist: hasta 30 (6 por criterio);
-- compromiso: tiempo 10, reputación 20, dinero 30.
+- compromiso: tiempo 10, reputación 20, dinero 30;
+- interés: 5 por cada par que mencionó como problema y eligió como prioridad, y 5 por cada "así es" del resumen de cierre, hasta 15.
+
+El puntaje final nunca pasa de 100. Solo cuentan los problemas del nicho actual.
 
 Los cumplidos restan 3 puntos cada uno, hasta un máximo de 15. Los pesos se ajustan en `lib/scoring.ts`.
 

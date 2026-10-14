@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import { ArrowLeft, ArrowRight, Check, CloudCheck, Lightbulb, Save } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -11,6 +11,7 @@ import { Field, Input, Select, Textarea } from "@/components/ui/field";
 import { useToast } from "@/components/ui/toast";
 import { ContactStrategy } from "@/components/niches/contact-strategy";
 import { NichePicker } from "@/components/niches/niche-picker";
+import { NichePreview } from "@/components/niches/niche-preview";
 import { OBJECTIONS } from "@/data/objections";
 import {
   answerKey,
@@ -24,11 +25,13 @@ import { createBusiness, nameKey } from "@/lib/business";
 import { cn } from "@/lib/cn";
 import { businessHref } from "@/lib/routes";
 import { formatUsd } from "@/lib/format";
-import { scoreBusiness, VERDICT_META } from "@/lib/scoring";
+import { orderProblems, scoreBusiness, VERDICT_META } from "@/lib/scoring";
 import { getBusinesses, saveBusiness, useBusinesses } from "@/lib/storage";
 import type { Answer, Business, Commitment, Niche, Phase } from "@/lib/types";
 import { WithNiche } from "./niche-boundary";
+import { PairChecklist } from "./pair-checklist";
 import { QuestionField } from "./question-field";
+import { SummaryLines } from "./summary-lines";
 import { ScoreMeter, VerdictBadge } from "./verdict";
 
 type StepId = "datos" | Phase | "objeciones";
@@ -208,23 +211,49 @@ export function BusinessForm({ initial, defaultNicheId }: { initial?: Business; 
               ) : current.id === "problemas" ? (
                 draft.nicheId ? (
                   <WithNiche id={draft.nicheId}>
-                    {(niche) => <ProblemsStep niche={niche} draft={draft} setAnswer={setAnswer} update={update} />}
+                    {(niche) => (
+                      <ProblemsStep niche={niche} draft={draft} validatedIds={score.validatedProblemIds} setAnswer={setAnswer} update={update} />
+                    )}
                   </WithNiche>
                 ) : null
               ) : current.id === "objeciones" ? (
                 <ObjectionsStep draft={draft} update={update} />
               ) : (
                 <>
-                  {QUESTIONS_BY_PHASE[current.id].map((q, i) => (
-                    <QuestionField
-                      key={q.id}
-                      answerKey={q.id}
-                      question={q}
-                      answer={draft.answers[q.id]}
-                      onChange={setAnswer}
-                      index={i + 1}
-                    />
-                  ))}
+                  {QUESTIONS_BY_PHASE[current.id].map((q, i) => {
+                    const field = (children?: ReactNode) => (
+                      <QuestionField
+                        key={q.id}
+                        answerKey={q.id}
+                        question={q}
+                        answer={draft.answers[q.id]}
+                        onChange={setAnswer}
+                        index={i + 1}
+                        classify={!q.summary}
+                      >
+                        {children}
+                      </QuestionField>
+                    );
+                    if (!draft.nicheId || (!q.checklist && !q.summary)) return field();
+                    return (
+                      <WithNiche key={q.id} id={draft.nicheId}>
+                        {(niche) =>
+                          field(
+                            q.summary ? (
+                              <SummaryLines
+                                niche={niche}
+                                draft={draft}
+                                validatedIds={score.validatedProblemIds}
+                                onChange={(summaryReplies) => update({ summaryReplies })}
+                              />
+                            ) : (
+                              <NicheChecklist kind={q.checklist!} niche={niche} draft={draft} update={update} />
+                            ),
+                          )
+                        }
+                      </WithNiche>
+                    );
+                  })}
                   {current.id === "cierre" ? <CommitmentBlock draft={draft} update={update} /> : null}
                 </>
               )}
@@ -347,11 +376,38 @@ function DataStep({
         <NichePicker
           id="b-niche"
           value={draft.nicheId}
-          onChange={(nicheId) => update({ nicheId })}
+          onChange={(nicheId) =>
+            // Los problemas marcados pertenecen al nicho anterior
+            update(
+              nicheId === draft.nicheId
+                ? { nicheId }
+                : {
+                    nicheId,
+                    // Las respuestas por problema (`pregunta::problemId`) son del nicho anterior
+                    answers: Object.fromEntries(Object.entries(draft.answers).filter(([k]) => !k.includes("::"))),
+                    problemsMentioned: [],
+                    solutionsWanted: [],
+                    summaryReplies: {},
+                    problemsConfirmed: [],
+                  },
+            )
+          }
           invalid={touched && !!nicheError}
           describedBy={touched && nicheError ? "b-niche-error" : "b-niche-hint"}
         />
       </Field>
+      {draft.nicheId ? (
+        <details open className="group rounded-xl border border-border bg-card sm:col-span-2">
+          <summary className="flex min-h-12 items-center gap-2 px-4 py-3 marker:content-none [&::-webkit-details-marker]:hidden">
+            <ArrowRight className="size-4 text-muted-foreground transition-transform duration-200 group-open:rotate-90" aria-hidden="true" />
+            <span className="font-medium">Problemas típicos y soluciones</span>
+            <span className="text-sm text-muted-foreground">· para guiarte, no para leérselos</span>
+          </summary>
+          <div className="border-t border-border p-4">
+            <WithNiche id={draft.nicheId}>{(niche) => <NichePreview niche={niche} />}</WithNiche>
+          </div>
+        </details>
+      ) : null}
       <Field label="Persona de contacto" htmlFor="b-contact" hint="Con quién hablaste y qué rol tiene.">
         <Input
           id="b-contact"
@@ -407,42 +463,92 @@ function DataStep({
   );
 }
 
+/** Match de la respuesta con el nicho: soluciones (prioridades) o problemas (dolores) */
+function NicheChecklist({
+  kind,
+  niche,
+  draft,
+  update,
+}: {
+  kind: "solutions" | "problems";
+  niche: Niche;
+  draft: Business;
+  update: (patch: Partial<Business>) => void;
+}) {
+  const solutionByProblem = new Map(niche.solutions.map((s) => [s.problemId, s]));
+  if (kind === "solutions") {
+    const mentioned = new Set(draft.problemsMentioned);
+    return (
+      <PairChecklist
+        legend="¿Alguna de sus prioridades coincide con lo que resolvemos?"
+        hint="Marcá las que nombró él. Si además mencionó el problema, ese par pesa más."
+        items={niche.problems.map((p) => {
+          const s = solutionByProblem.get(p.id);
+          return { id: p.id, label: s?.value ?? s?.name ?? p.text, detail: s?.name, paired: mentioned.has(p.id) };
+        })}
+        selected={draft.solutionsWanted}
+        onChange={(solutionsWanted) => update({ solutionsWanted })}
+        pairedLabel="Mencionó el problema"
+      />
+    );
+  }
+  const wanted = new Set(draft.solutionsWanted);
+  return (
+    <PairChecklist
+      legend="¿Mencionó alguno de estos dolores del nicho?"
+      hint="Marcá solo los que dijo él por su cuenta; no se los sugieras. Van primero en Problemas del nicho."
+      items={niche.problems.map((p) => ({ id: p.id, label: p.text, paired: wanted.has(p.id) }))}
+      selected={draft.problemsMentioned}
+      onChange={(problemsMentioned) => update({ problemsMentioned })}
+      pairedLabel="Es prioridad"
+    />
+  );
+}
+
 function ProblemsStep({
   niche,
   draft,
+  validatedIds,
   setAnswer,
   update,
 }: {
   niche: Niche;
   draft: Business;
+  validatedIds: string[];
   setAnswer: (key: string, patch: Partial<Answer>) => void;
   update: (patch: Partial<Business>) => void;
 }) {
-  const score = scoreBusiness(draft);
-  const validated = new Set(score.validatedProblemIds);
+  const validated = new Set(validatedIds);
   const confirmed = new Set(draft.problemsConfirmed);
+  const mentioned = new Set(draft.problemsMentioned);
+  const wanted = new Set(draft.solutionsWanted);
   const solutionByProblem = new Map(niche.solutions.map((s) => [s.problemId, s]));
+  // Por interés (problema + solución > uno solo), sin reordenar al validar; se conserva el número original
+  const ordered = orderProblems(niche.problems, draft, []);
+  const anyInterest = ordered.some((x) => x.interest > 0);
 
-  const toggleConfirmed = (id: string) => {
-    const next = new Set(confirmed);
+  const toggle = (field: "problemsConfirmed" | "problemsMentioned", id: string) => {
+    const next = new Set(draft[field]);
     if (next.has(id)) next.delete(id);
     else next.add(id);
-    update({ problemsConfirmed: [...next] });
+    update({ [field]: [...next] });
   };
 
   return (
     <div className="flex flex-col gap-4">
       <p className="text-sm text-muted-foreground">
         Estas son <strong className="text-foreground">hipótesis</strong>: no se las leas al cliente. Usalas para guiar la
-        conversación hacia “¿cómo lo hacés hoy?” y anclá todo en hechos concretos.
+        conversación hacia “¿cómo lo hacés hoy?” y anclá todo en hechos concretos. Primero van los que mencionó como problema y
+        como prioridad, después los que mencionó de una sola forma.
       </p>
-      {niche.problems.map((problem, pi) => {
+      {ordered.map(({ problem, index: pi, interest }, position) => {
         const solution = solutionByProblem.get(problem.id);
         const isValid = validated.has(problem.id);
+        const isMentioned = mentioned.has(problem.id);
         return (
           <details
             key={problem.id}
-            open={pi === 0}
+            open={interest > 0 || (!anyInterest && position === 0)}
             className="group rounded-xl border border-border bg-background/50 open:bg-card"
           >
             <summary className="flex min-h-14 items-start gap-3 p-4 marker:content-none [&::-webkit-details-marker]:hidden">
@@ -453,13 +559,34 @@ function ProblemsStep({
                 <span className="block text-xs font-medium uppercase tracking-wide text-muted-foreground">Hipótesis</span>
                 <span className="block font-medium first-letter:uppercase">{problem.text}</span>
               </span>
-              {isValid ? (
-                <Badge tone="success">
-                  <Check aria-hidden="true" /> Validado
-                </Badge>
-              ) : (
-                <Badge>Sin validar</Badge>
-              )}
+              <span className="flex flex-col items-end gap-1.5">
+                {isValid ? (
+                  <Badge tone="success">
+                    <Check aria-hidden="true" /> Validado
+                  </Badge>
+                ) : (
+                  <Badge>Sin validar</Badge>
+                )}
+                {wanted.has(problem.id) ? <Badge tone="accent">Es prioridad</Badge> : null}
+                <label
+                  className={cn(
+                    "inline-flex h-8 items-center gap-1.5 rounded-full border px-2.5 text-xs font-medium transition-colors duration-150",
+                    "has-[:focus-visible]:ring-2 has-[:focus-visible]:ring-ring",
+                    isMentioned
+                      ? "border-accent/60 bg-accent/15 text-[hsl(272_70%_42%)] dark:text-[hsl(272_95%_78%)]"
+                      : "border-border text-muted-foreground hover:bg-muted",
+                  )}
+                >
+                  <input
+                    type="checkbox"
+                    checked={isMentioned}
+                    onChange={() => toggle("problemsMentioned", problem.id)}
+                    className="sr-only"
+                  />
+                  {isMentioned ? <Check className="size-3.5" aria-hidden="true" /> : null}
+                  Lo mencionó
+                </label>
+              </span>
             </summary>
             <div className="flex flex-col gap-7 border-t border-border p-4">
               {PER_PROBLEM_QUESTIONS.map((q, i) => {
@@ -479,7 +606,7 @@ function ProblemsStep({
                 <input
                   type="checkbox"
                   checked={confirmed.has(problem.id)}
-                  onChange={() => toggleConfirmed(problem.id)}
+                  onChange={() => toggle("problemsConfirmed", problem.id)}
                   className="mt-0.5 size-5 accent-[hsl(var(--primary))]"
                 />
                 <span>
@@ -492,6 +619,7 @@ function ProblemsStep({
               {solution ? (
                 <p className="rounded-lg bg-muted/60 p-3 text-sm">
                   <span className="font-medium">Si se valida → {solution.name}</span>
+                  {solution.value ? <span className="text-muted-foreground"> · {solution.value}</span> : null}
                   <span className="text-muted-foreground"> · {formatUsd(solution.priceMin, solution.priceMax)}</span>
                 </p>
               ) : null}

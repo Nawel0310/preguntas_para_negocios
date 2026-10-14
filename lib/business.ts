@@ -1,7 +1,8 @@
-import type { Answer, Business, Commitment, InterviewMode, ObjectionEntry, Signal } from "./types";
+import type { Answer, Business, Commitment, InterviewMode, ObjectionEntry, Signal, SummaryReply } from "./types";
 
 const SIGNALS = new Set<Signal>(["fact", "vague", "compliment"]);
 const COMMITMENTS = new Set<Commitment>(["none", "time", "reputation", "money"]);
+const REPLIES = new Set<SummaryReply>(["yes", "maybe", "no"]);
 
 const str = (v: unknown, fallback = "") => (typeof v === "string" ? v : fallback);
 
@@ -26,6 +27,9 @@ export function createBusiness(partial: Partial<Business> = {}): Business {
     contactChannel: "",
     interviewMode: "presencial",
     answers: {},
+    problemsMentioned: [],
+    solutionsWanted: [],
+    summaryReplies: {},
     problemsConfirmed: [],
     evangelist: [false, false, false, false, false],
     commitment: "none",
@@ -67,6 +71,13 @@ export function normalizeBusiness(input: unknown): Business | null {
         .filter((x) => x.id)
     : [];
 
+  const summaryReplies: Record<string, SummaryReply> = {};
+  if (o.summaryReplies && typeof o.summaryReplies === "object") {
+    for (const [k, v] of Object.entries(o.summaryReplies as Record<string, unknown>)) {
+      if (REPLIES.has(v as SummaryReply)) summaryReplies[k] = v as SummaryReply;
+    }
+  }
+
   const createdAt = isoOr(o.createdAt, now);
   return {
     id: str(o.id) || newId(),
@@ -76,9 +87,10 @@ export function normalizeBusiness(input: unknown): Business | null {
     contactChannel: str(o.contactChannel),
     interviewMode: (o.interviewMode === "online" ? "online" : "presencial") as InterviewMode,
     answers,
-    problemsConfirmed: Array.isArray(o.problemsConfirmed)
-      ? o.problemsConfirmed.filter((x): x is string => typeof x === "string")
-      : [],
+    problemsMentioned: stringList(o.problemsMentioned),
+    solutionsWanted: stringList(o.solutionsWanted),
+    summaryReplies,
+    problemsConfirmed: stringList(o.problemsConfirmed),
     evangelist,
     commitment: COMMITMENTS.has(o.commitment as Commitment) ? (o.commitment as Commitment) : "none",
     commitmentNote: str(o.commitmentNote),
@@ -88,6 +100,9 @@ export function normalizeBusiness(input: unknown): Business | null {
     updatedAt: isoOr(o.updatedAt, createdAt),
   };
 }
+
+const stringList = (v: unknown): string[] =>
+  Array.isArray(v) ? v.filter((x): x is string => typeof x === "string") : [];
 
 /** Clave para detectar duplicados por nombre: sin espacios extra, minúsculas y sin acentos */
 export function nameKey(name: string): string {
