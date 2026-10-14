@@ -53,7 +53,8 @@ export function BusinessForm({ initial, defaultNicheId }: { initial?: Business; 
   const [touched, setTouched] = useState(false);
   const [savedAt, setSavedAt] = useState<string | null>(initial ? initial.updatedAt : null);
   const dirty = useRef(false);
-  const topRef = useRef<HTMLDivElement>(null);
+  // Cada cambio de paso pide volver arriba; se aplica después del render del paso nuevo
+  const [scrollRequest, setScrollRequest] = useState(0);
 
   // ---------- Validación ----------
   const duplicate = useMemo(() => {
@@ -108,20 +109,26 @@ export function BusinessForm({ initial, defaultNicheId }: { initial?: Business; 
 
   const score = useMemo(() => scoreBusiness(draft), [draft]);
 
+  useEffect(() => {
+    // "instant": con scroll suave, el cambio de alto del paso nuevo cortaba la animación a mitad de camino
+    if (scrollRequest > 0) window.scrollTo({ top: 0, behavior: "instant" });
+  }, [scrollRequest]);
+
   const goTo = (i: number) => {
+    setScrollRequest((n) => n + 1);
     if (i > 0 && !valid) {
       setTouched(true);
       setStep(0);
       return;
     }
     setStep(i);
-    topRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   const finish = () => {
     if (!valid) {
       setTouched(true);
       setStep(0);
+      setScrollRequest((n) => n + 1);
       return;
     }
     // Guardado explícito aunque no haya cambios pendientes
@@ -137,7 +144,7 @@ export function BusinessForm({ initial, defaultNicheId }: { initial?: Business; 
   const isLast = step === STEPS.length - 1;
 
   return (
-    <div ref={topRef} className="flex scroll-mt-24 flex-col gap-6">
+    <div className="flex flex-col gap-6">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
         <div className="flex flex-col gap-1">
           <Link href={initial ? businessHref(initial.id) : "/negocios"} className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground">
