@@ -406,7 +406,7 @@ function DataStep({
         />
       </Field>
       {draft.nicheId ? (
-        <details open className="group rounded-xl border border-border bg-card sm:col-span-2">
+        <details className="group rounded-xl border border-border bg-card sm:col-span-2">
           <summary className="flex min-h-12 items-center gap-2 px-4 py-3 marker:content-none [&::-webkit-details-marker]:hidden">
             <ArrowRight className="size-4 shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-90" aria-hidden="true" />
             <span className="flex min-w-0 flex-wrap items-baseline gap-x-2">
@@ -536,7 +536,6 @@ function ProblemsStep({
   const solutionByProblem = new Map(niche.solutions.map((s) => [s.problemId, s]));
   // Por interés (problema + solución > uno solo), sin reordenar al validar; se conserva el número original
   const ordered = orderProblems(niche.problems, draft, []);
-  const anyInterest = ordered.some((x) => x.interest > 0);
 
   const toggle = (field: "problemsConfirmed" | "problemsMentioned", id: string) => {
     const next = new Set(draft[field]);
@@ -552,14 +551,13 @@ function ProblemsStep({
         conversación hacia “¿cómo lo hacés hoy?” y anclá todo en hechos concretos. Primero van los que mencionó como problema y
         como prioridad, después los que mencionó de una sola forma.
       </p>
-      {ordered.map(({ problem, index: pi, interest }, position) => {
+      {ordered.map(({ problem, index: pi }) => {
         const solution = solutionByProblem.get(problem.id);
         const isValid = validated.has(problem.id);
         const isMentioned = mentioned.has(problem.id);
         return (
           <details
             key={problem.id}
-            open={interest > 0 || (!anyInterest && position === 0)}
             className="group rounded-xl border border-border bg-background/50 open:bg-card"
           >
             <summary className="flex min-h-14 items-start gap-3 p-4 marker:content-none [&::-webkit-details-marker]:hidden">
